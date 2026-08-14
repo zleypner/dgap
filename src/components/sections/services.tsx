@@ -10,9 +10,9 @@ import {
   Button,
   ButtonGroup,
 } from "@/components/ui";
-import { Stethoscope, Shield, HeartPulse, FileText } from "lucide-react";
+import { Stethoscope, Shield, HeartPulse, FileText, Users } from "lucide-react";
 
-const categoryIcons = [Stethoscope, Shield, HeartPulse, FileText];
+const categoryIcons = [Stethoscope, Shield, HeartPulse, FileText, Users];
 
 export function Services() {
   const { t } = useTranslation();
