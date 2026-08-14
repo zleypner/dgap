@@ -26,35 +26,47 @@ export function Rehabilitation() {
   return (
     <Section
       id="rehabilitacion"
-      className="overflow-hidden bg-gradient-to-b from-[#F9FAFB] to-white py-12 sm:py-14 lg:py-16"
+      className="overflow-hidden bg-gradient-to-b from-[#F9FAFB] to-white py-10 sm:py-12 lg:py-14"
     >
       <Container>
-        {/* LEVEL 1 - Introduction (centered, wider) */}
+        {/* ═══════════════════════════════════════════════════════════════
+            LEVEL 1 — Introduction (wider, horizontal layout)
+        ═══════════════════════════════════════════════════════════════ */}
         <AnimateOnScroll
           animation="blur-in"
           mobileAnimation="fade-in"
           duration={600}
           easing="smooth"
         >
-          <div className="mx-auto mb-8 max-w-[900px] text-center sm:mb-10 lg:mb-12 lg:text-left">
-            <p className="mb-2 text-xs font-semibold tracking-widest text-[#38BDF8] uppercase sm:mb-3 sm:text-sm">
+          <div className="mx-auto mb-8 max-w-[950px] sm:mb-10 lg:mb-12">
+            {/* Eyebrow */}
+            <p className="mb-2 text-xs font-semibold tracking-widest text-[#38BDF8] uppercase sm:text-sm lg:mb-3">
               {t("rehabilitation.badge")}
             </p>
-            <h2 className="mb-4 text-[clamp(1.75rem,3.7vw,2.75rem)] font-bold leading-[1.1] text-[#1E3A5F] sm:mb-5">
+
+            {/* Headline - clamp typography */}
+            <h2 className="mb-4 text-[clamp(1.625rem,3.7vw,2.5rem)] font-bold leading-[1.1] text-[#1E3A5F] sm:mb-5">
               {t("rehabilitation.title")}
             </h2>
-            <p className="mb-3 text-base leading-relaxed text-[#1E3A5F]/80 sm:text-lg lg:leading-[1.6]">
+
+            {/* Subtitle paragraph */}
+            <p className="mb-3 text-base leading-[1.6] text-[#1E3A5F]/80 sm:text-lg">
               {t("rehabilitation.subtitle")}
             </p>
-            <p className="text-sm leading-relaxed text-[#1E3A5F]/70 sm:text-base lg:leading-[1.6]">
+
+            {/* Intro paragraph */}
+            <p className="text-sm leading-[1.6] text-[#1E3A5F]/70 sm:text-base">
               {t("rehabilitation.intro")}
             </p>
           </div>
         </AnimateOnScroll>
 
-        {/* LEVEL 2 - Image + Benefits (2 columns on desktop) */}
-        <div className="grid items-start gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-10">
-          {/* Left: Image */}
+        {/* ═══════════════════════════════════════════════════════════════
+            LEVEL 2 — Image + Benefits (2 columns 50/50)
+        ═══════════════════════════════════════════════════════════════ */}
+        <div className="grid items-start gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-8">
+
+          {/* LEFT: Image */}
           <AnimateOnScroll
             animation="swing-in"
             mobileAnimation="scale"
@@ -73,7 +85,7 @@ export function Rehabilitation() {
             </div>
           </AnimateOnScroll>
 
-          {/* Right: Benefits grid + CTA */}
+          {/* RIGHT: Benefits grid + CTA */}
           <div className="flex flex-col">
             {/* Benefits 2x2 grid */}
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
@@ -85,18 +97,21 @@ export function Rehabilitation() {
                     animation="scale-up"
                     mobileAnimation="fade-in"
                     staggerIndex={index}
-                    staggerDelay={60}
+                    staggerDelay={50}
                     duration={400}
                     easing="spring"
                   >
-                    <div className="group rounded-xl border border-[#38BDF8]/15 bg-white p-4 transition-all duration-300 hover:border-[#38BDF8]/40 hover:shadow-md sm:rounded-[18px] sm:p-5 lg:p-[22px]">
-                      <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-all duration-300 group-hover:bg-[#38BDF8] group-hover:text-white sm:mb-3 sm:h-10 sm:w-10">
-                        <Icon className="h-[18px] w-[18px] sm:h-5 sm:w-5" strokeWidth={1.8} />
+                    <div className="group rounded-[18px] border border-[#38BDF8]/15 bg-white p-5 transition-all duration-300 hover:border-[#38BDF8]/40 hover:shadow-md lg:p-[22px]">
+                      {/* Icon */}
+                      <div className="mb-2.5 flex h-9 w-9 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-colors duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
+                        <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
                       </div>
-                      <h4 className="mb-1 text-[15px] font-semibold leading-tight text-[#1E3A5F] sm:text-base">
+                      {/* Title */}
+                      <h4 className="mb-1 text-[15px] font-semibold leading-tight text-[#1E3A5F]">
                         {benefit.title}
                       </h4>
-                      <p className="text-[13px] leading-snug text-[#1E3A5F]/70 sm:text-sm sm:leading-relaxed">
+                      {/* Description - max 2-3 lines */}
+                      <p className="text-[13px] leading-snug text-[#1E3A5F]/70 line-clamp-3">
                         {benefit.description}
                       </p>
                     </div>
@@ -109,7 +124,7 @@ export function Rehabilitation() {
             <AnimateOnScroll
               animation="fade-up"
               mobileAnimation="fade-up"
-              delay={200}
+              delay={150}
               duration={500}
               easing="smooth"
             >
