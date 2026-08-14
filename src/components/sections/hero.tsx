@@ -7,9 +7,8 @@ import {
   Icons,
   AnimateOnScroll,
   Container,
-  Floating,
 } from "@/components/ui";
-import { Activity, Building2, BadgeCheck, UserRound } from "lucide-react";
+import { Building2, BadgeCheck, UserRound } from "lucide-react";
 
 export function Hero() {
   return (
@@ -114,66 +113,16 @@ export function Hero() {
                 <div className="absolute -right-4 top-8 h-[85%] w-[85%] rounded-[2rem] bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5 sm:-right-6 sm:top-10 lg:-right-8 lg:rounded-[2.5rem]" />
 
                 {/* Main image container */}
-                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg sm:aspect-[4/5] sm:rounded-3xl lg:aspect-[3/4] xl:aspect-[4/5]">
+                <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg sm:rounded-3xl">
                   <Image
-                    src={siteConfig.images.hero}
-                    alt="Dra. Eimy Stephany Pinto Arita - Medicina con Empatía"
+                    src="/images/services/pulmonar2.webp"
+                    alt="Rehabilitación cardiopulmonar - Dra. Eimy Pinto"
                     fill
                     priority
-                    className="object-cover object-top"
+                    className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
                   />
                 </div>
-
-                {/* Floating Card 1 - Imagen de rehabilitación pulmonar */}
-                <Floating amplitude={4} duration={5} delay={0}>
-                  <div className="absolute -left-2 top-[15%] z-20 sm:-left-4 lg:-left-8">
-                    <AnimateOnScroll
-                      animation="scale-up"
-                      delay={600}
-                      duration={500}
-                      easing="spring"
-                    >
-                      <div className="relative h-24 w-24 overflow-hidden rounded-xl border-2 border-white bg-white shadow-lg sm:h-28 sm:w-28 sm:rounded-2xl lg:h-32 lg:w-32">
-                        <Image
-                          src="/images/services/pulmonar2.webp"
-                          alt="Rehabilitación pulmonar"
-                          fill
-                          className="object-cover"
-                          sizes="128px"
-                        />
-                      </div>
-                    </AnimateOnScroll>
-                  </div>
-                </Floating>
-
-                {/* Floating Card 2 - Salud cardiometabólica */}
-                <Floating amplitude={5} duration={6} delay={0.5}>
-                  <div className="absolute -right-2 bottom-[20%] z-20 sm:-right-4 lg:-right-6">
-                    <AnimateOnScroll
-                      animation="scale-up"
-                      delay={750}
-                      duration={500}
-                      easing="spring"
-                    >
-                      <div className="rounded-xl border border-white/60 bg-white/90 px-3 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-4 sm:py-3">
-                        <div className="flex items-center gap-2.5 sm:gap-3">
-                          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1E3A5F]/10 sm:h-9 sm:w-9">
-                            <Activity className="h-4 w-4 text-[#1E3A5F] sm:h-5 sm:w-5" />
-                          </div>
-                          <div>
-                            <p className="text-xs font-semibold text-[#1E3A5F] sm:text-sm">
-                              Salud cardiometabólica
-                            </p>
-                            <p className="text-[10px] text-[#1E3A5F]/60 sm:text-xs">
-                              Prevención · Control · Seguimiento
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </AnimateOnScroll>
-                  </div>
-                </Floating>
               </div>
             </AnimateOnScroll>
           </div>

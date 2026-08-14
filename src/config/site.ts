@@ -218,9 +218,9 @@ export const siteConfig = {
 
   // Imagenes
   images: {
-    hero: "/images/doctor/img4.png", // Foto profesional en consultorio
+    hero: "/images/services/pulmonar2.webp", // Imagen de rehabilitación pulmonar
     about: "/images/doctor/img1.2.png", // Retrato con bata blanca
-    consultation: "/images/doctor/img4.png", // Consulta con paciente
+    consultation: "/images/doctor/img1.1.png", // Consulta con paciente
     office: "/images/doctor/img1.1.png", // En escritorio del consultorio
     // Imagenes de servicios
     rehabilitacion: "/images/services/pulmonar2.webp",
