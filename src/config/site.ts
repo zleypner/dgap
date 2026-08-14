@@ -222,9 +222,12 @@ export const siteConfig = {
     about: "/images/doctor/img1.2.png", // Retrato con bata blanca
     consultation: "/images/doctor/img4.png", // Consulta con paciente
     office: "/images/doctor/img1.1.png", // En escritorio del consultorio
-    // Placeholders para servicios (pendiente)
-    rehabilitacion: "REHABILITACION_CARDIOPULMONAR_IMAGE",
-    cardiometabolico: "CARDIOMETABOLICO_IMAGE",
+    // Imagenes de servicios
+    rehabilitacion: "/images/services/rehabilitacionpulmonar.webp",
+    rehabilitacion2: "/images/services/pulmonar2.webp",
+    rehabilitacion3: "/images/services/terapiapulmonar.webp",
+    cardiometabolico: "/images/services/cardiometabolico1.webp",
+    // Placeholders pendientes
     cardiologia: "CARDIOLOGIA_NO_INVASIVA_IMAGE",
     holter: "HOLTER_IMAGE",
     mapa: "MAPA_IMAGE",

@@ -128,12 +128,30 @@ export function Rehabilitation() {
                 />
               </div>
 
-              {/* Decorative elements */}
+              {/* Secondary image - Top left */}
               <Floating amplitude={8} duration={5} delay={0}>
-                <div className="absolute -top-4 -left-4 hidden h-20 w-20 rounded-2xl bg-[#38BDF8]/10 lg:block" />
+                <div className="absolute -top-4 -left-4 hidden h-28 w-28 overflow-hidden rounded-2xl border-4 border-white shadow-lg lg:block">
+                  <Image
+                    src="/images/services/pulmonar2.webp"
+                    alt="Terapia pulmonar"
+                    fill
+                    className="object-cover"
+                    sizes="112px"
+                  />
+                </div>
               </Floating>
+
+              {/* Secondary image - Bottom right */}
               <Floating amplitude={6} duration={4} delay={0.5}>
-                <div className="absolute -bottom-4 -right-4 hidden h-16 w-16 rounded-xl bg-[#1E3A5F] lg:block" />
+                <div className="absolute -bottom-4 -right-4 hidden h-32 w-32 overflow-hidden rounded-xl border-4 border-white shadow-lg lg:block">
+                  <Image
+                    src="/images/services/terapiapulmonar.webp"
+                    alt="Rehabilitación pulmonar"
+                    fill
+                    className="object-cover"
+                    sizes="128px"
+                  />
+                </div>
               </Floating>
             </div>
           </AnimateOnScroll>
