@@ -43,7 +43,8 @@ export function Cardiology() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Cards container - 3+2 centered layout */}
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
           {studies.map((study, index) => {
             const Icon = studyIcons[index];
 
@@ -56,29 +57,31 @@ export function Cardiology() {
                 staggerDelay={100}
                 duration={600}
                 easing="spring"
-                className="h-full"
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] max-w-[360px]"
               >
-                <div className="group flex h-full flex-col rounded-xl sm:rounded-2xl border border-[#38BDF8]/30 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#38BDF8] hover:shadow-xl">
+                <div className="group flex h-full flex-col rounded-2xl border-2 border-[#38BDF8]/20 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#38BDF8]/60 hover:shadow-lg">
                   {/* Icon area */}
-                  <div className="relative h-32 sm:h-40 overflow-hidden rounded-t-xl sm:rounded-t-2xl bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5">
+                  <div className="relative h-36 overflow-hidden rounded-t-2xl bg-gradient-to-br from-[#38BDF8]/8 to-[#38BDF8]/3">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon className="h-14 w-14 sm:h-16 sm:w-16 text-[#38BDF8]" />
+                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/80 shadow-sm">
+                        <Icon className="h-8 w-8 text-[#38BDF8]" />
+                      </div>
                     </div>
                   </div>
 
                   {/* Content */}
-                  <div className="flex flex-1 flex-col p-4 sm:p-6">
+                  <div className="flex flex-1 flex-col p-6">
                     <h3 className="mb-3 text-lg font-bold text-[#1E3A5F] transition-colors duration-300 group-hover:text-[#38BDF8]">
                       {study.title}
                     </h3>
-                    <p className="mb-4 flex-grow text-sm text-[#1E3A5F]/70">
+                    <p className="mb-5 flex-grow text-sm leading-relaxed text-[#1E3A5F]/70">
                       {study.description}
                     </p>
                     <a
                       href={siteConfig.contact.whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#38BDF8] transition-all duration-300 group-hover:gap-3"
+                      className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#38BDF8] transition-all duration-300 hover:gap-3"
                     >
                       {study.cta}
                       <Icons.arrowRight className="h-4 w-4" />
