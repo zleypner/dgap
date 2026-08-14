@@ -30,12 +30,13 @@ export function Cardiometabolic() {
     >
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          {/* Image placeholder */}
+          {/* Image placeholder - appears below content on mobile */}
           <AnimateOnScroll
             animation="swing-in"
             mobileAnimation="scale"
             duration={800}
             easing="spring"
+            className="order-last lg:order-first"
           >
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white/10 shadow-lg">
