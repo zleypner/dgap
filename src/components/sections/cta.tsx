@@ -69,7 +69,7 @@ export function CTA() {
                   <a href="#servicios">
                     <Button
                       variant="outline"
-                      className="border-white/30 text-white hover:bg-white/10"
+                      className="bg-white text-[#1E3A5F] border-white hover:bg-white/90"
                     >
                       {t("cta.secondaryCta")}
                     </Button>

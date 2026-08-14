@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import {
@@ -38,13 +39,13 @@ export function Cardiometabolic() {
           >
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white/10 shadow-lg">
-                {/* CARDIOMETABOLICO_IMAGE placeholder */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <Icons.trendingUp className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-white/30 mb-4" />
-                  <p className="text-sm font-medium text-white/40">
-                    CARDIOMETABOLICO_IMAGE
-                  </p>
-                </div>
+                <Image
+                  src="/images/services/cardiometabolico1.webp"
+                  alt="Salud cardiometabólica - Dra. Eimy Pinto"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
 
               {/* Process steps - Mobile */}

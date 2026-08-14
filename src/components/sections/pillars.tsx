@@ -55,7 +55,7 @@ export function Pillars() {
                 easing="spring"
                 className="h-full"
               >
-                <div className="group relative flex h-full flex-col rounded-2xl border border-[#38BDF8]/30 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#38BDF8] hover:shadow-xl">
+                <div className="group relative flex h-full flex-col rounded-2xl border-2 border-[#38BDF8] bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                   {/* Number badge */}
                   <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#38BDF8] text-lg font-bold text-white shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-md">
                     {pillar.number}

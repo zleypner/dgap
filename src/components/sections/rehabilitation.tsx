@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import {
@@ -118,13 +119,13 @@ export function Rehabilitation() {
           >
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5 shadow-lg">
-                {/* REHABILITACION_CARDIOPULMONAR_IMAGE placeholder */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <Icons.heartPulse className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-[#38BDF8]/30 mb-4" />
-                  <p className="text-sm font-medium text-[#1E3A5F]/40">
-                    REHABILITACION_CARDIOPULMONAR_IMAGE
-                  </p>
-                </div>
+                <Image
+                  src="/images/services/rehabilitacionpulmonar.webp"
+                  alt="Rehabilitación cardiopulmonar - Dra. Eimy Pinto"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
 
               {/* Decorative elements */}

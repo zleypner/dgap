@@ -1,76 +1,62 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import {
   Button,
-  ButtonMicrocopy,
-  ButtonGroup,
   Icons,
   AnimateOnScroll,
   Container,
   Floating,
 } from "@/components/ui";
-import { CheckCircle } from "lucide-react";
+import { HeartPulse, Activity, Building2, BadgeCheck, UserRound } from "lucide-react";
 
 export function Hero() {
-  const { t } = useTranslation();
-
   return (
     <section
       id="inicio"
-      className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-white via-[#F5F5F5] to-[#EFEFEF] pt-24 pb-12 md:pt-20 md:pb-0"
+      className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white via-white to-[#F8FAFC] pt-20 sm:pt-24 lg:pt-28"
     >
-      {/* Background decorations with floating animation */}
+      {/* Subtle background decoration */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <Floating amplitude={15} duration={6} delay={0}>
-          <div className="absolute top-20 right-0 h-[600px] w-[600px] rounded-full bg-[#1E3A5F]/5 blur-3xl" />
-        </Floating>
-        <Floating amplitude={20} duration={8} delay={1}>
-          <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-[#38BDF8]/5 blur-3xl" />
-        </Floating>
-        <Floating amplitude={10} duration={5} delay={2}>
-          <div className="absolute top-1/3 left-1/4 hidden h-[200px] w-[200px] rounded-full bg-[#1E3A5F]/3 blur-2xl lg:block" />
-        </Floating>
+        <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-[#38BDF8]/[0.03] blur-3xl" />
+        <div className="absolute top-1/2 -left-40 h-[400px] w-[400px] rounded-full bg-[#1E3A5F]/[0.02] blur-3xl" />
       </div>
 
-      <Container className="relative z-10 py-8 sm:py-12 md:py-16 lg:py-20">
-        <div className="grid items-center gap-12 sm:gap-14 md:gap-16 lg:grid-cols-2 lg:gap-20 xl:gap-24">
-          {/* Content */}
-          <div className="relative z-10 text-center lg:text-left">
+      <Container className="relative z-10">
+        <div className="grid items-center gap-12 pb-8 lg:grid-cols-12 lg:gap-8 xl:gap-16">
+          {/* Content - Left side */}
+          <div className="order-1 lg:col-span-6 xl:col-span-5">
+            {/* Eyebrow */}
             <AnimateOnScroll
-              animation="blur-in"
+              animation="fade-in"
               mobileAnimation="fade-in"
               delay={0}
-              duration={600}
+              duration={500}
               easing="smooth"
             >
-              {/* Badge */}
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#38BDF8]/30 bg-[#38BDF8]/10 px-3 py-1.5 sm:mb-8 sm:px-4 sm:py-2">
-                <CheckCircle className="h-3.5 w-3.5 text-[#38BDF8] sm:h-4 sm:w-4" />
-                <span className="text-xs font-medium tracking-wider text-[#1E3A5F] uppercase sm:text-sm">
-                  {t("hero.badge")}
-                </span>
-              </div>
+              <p className="mb-4 text-[11px] font-semibold tracking-[0.2em] text-[#38BDF8] uppercase sm:mb-5 sm:text-xs">
+                Rehabilitación y salud integral
+              </p>
             </AnimateOnScroll>
 
+            {/* Headline */}
             <AnimateOnScroll
-              animation="rise-up"
+              animation="fade-up"
               mobileAnimation="fade-up"
               delay={100}
-              duration={800}
-              easing="elastic"
+              duration={700}
+              easing="smooth"
             >
-              <h1 className="text-3xl leading-tight font-bold tracking-tight text-[#1E3A5F] sm:text-4xl md:text-5xl lg:text-6xl">
-                {t("hero.title")}{" "}
-                <span className="relative text-[#38BDF8] italic">
-                  {t("hero.titleHighlight")}
-                  <span className="absolute -bottom-1 left-0 h-0.5 w-full rounded-full bg-[#38BDF8]/20 sm:-bottom-2 sm:h-1" />
-                </span>
+              <h1 className="text-[clamp(1.75rem,5vw,3.5rem)] font-bold leading-[1.1] tracking-tight text-[#1E3A5F]">
+                Rehabilitación cardiopulmonar y salud cardiometabólica
               </h1>
+              <p className="mt-2 text-[clamp(1.25rem,3.5vw,2.5rem)] font-medium leading-[1.2] tracking-tight text-[#38BDF8] italic sm:mt-3">
+                con acompañamiento cercano.
+              </p>
             </AnimateOnScroll>
 
+            {/* Description */}
             <AnimateOnScroll
               animation="fade-up"
               mobileAnimation="fade-in"
@@ -78,124 +64,149 @@ export function Hero() {
               duration={600}
               easing="smooth"
             >
-              <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-[#1E3A5F]/70 sm:mt-6 sm:text-lg md:text-xl lg:mx-0">
-                {t("hero.subtitle")}
+              <p className="mt-6 max-w-lg text-base leading-relaxed text-[#1E3A5F]/70 sm:mt-8 sm:text-lg">
+                Atención médica enfocada en prevención, recuperación y bienestar
+                cardiopulmonar, con una atención cercana y personalizada de la
+                Dra. Eimy Pinto.
               </p>
             </AnimateOnScroll>
 
             {/* CTAs */}
             <AnimateOnScroll
-              animation="scale-up"
+              animation="fade-up"
               mobileAnimation="fade-up"
               delay={400}
               duration={600}
-              easing="spring"
-            >
-              <ButtonGroup>
-                {/* Pre-text */}
-                <p className="mb-6 text-center text-base font-medium text-[#1E3A5F]/80 lg:text-left">
-                  {t("hero.ctaPreText")}
-                </p>
-
-                <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
-                  {/* Primary CTA */}
-                  <div className="flex flex-col items-center lg:items-start">
-                    <a
-                      href={siteConfig.contact.whatsappLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button variant="whatsapp">
-                        <Icons.whatsapp />
-                        {t("hero.primaryCta")}
-                      </Button>
-                    </a>
-                  </div>
-                  {/* Secondary CTA */}
-                  <a href="#servicios">
-                    <Button variant="outline">
-                      {t("hero.secondaryCta")}
-                    </Button>
-                  </a>
-                </div>
-                <ButtonMicrocopy align="center" className="lg:text-left">
-                  {t("hero.primaryCtaMicrocopy")}
-                </ButtonMicrocopy>
-              </ButtonGroup>
-            </AnimateOnScroll>
-
-            {/* Trust badges */}
-            <AnimateOnScroll
-              animation="fade-up"
-              mobileAnimation="fade-in"
-              delay={500}
-              duration={500}
               easing="smooth"
             >
-              <div className="mt-6 flex flex-col items-center justify-center gap-3 text-xs text-[#1E3A5F]/70 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-6 sm:text-sm lg:justify-start">
-                <div className="flex items-center gap-2">
-                  <Icons.stethoscope className="h-3.5 w-3.5 text-[#38BDF8] sm:h-4 sm:w-4" />
-                  <span>{t("hero.trustBadge1")}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Icons.checkCircle className="h-3.5 w-3.5 text-[#38BDF8] sm:h-4 sm:w-4" />
-                  <span>{t("hero.trustBadge2")}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Icons.messageCircle className="h-3.5 w-3.5 text-[#38BDF8] sm:h-4 sm:w-4" />
-                  <span>{t("hero.trustBadge3")}</span>
-                </div>
+              <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">
+                <a
+                  href={siteConfig.contact.whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="whatsapp" className="w-full sm:w-auto">
+                    <Icons.whatsapp />
+                    Agendar una consulta
+                  </Button>
+                </a>
+                <a href="#servicios">
+                  <Button variant="ghost" className="group w-full sm:w-auto">
+                    Conocer servicios
+                    <Icons.arrowRight className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                  </Button>
+                </a>
               </div>
             </AnimateOnScroll>
           </div>
 
-          {/* Image placeholder */}
-          <AnimateOnScroll
-            animation="swing-in"
-            mobileAnimation="scale"
-            delay={300}
-            duration={800}
-            easing="spring"
-          >
-            <div className="relative z-0 mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:mr-0 lg:ml-auto lg:max-w-sm xl:max-w-md">
-              {/* Main image */}
-              <div className="hover:shadow-3xl relative aspect-[3/4] overflow-hidden rounded-2xl bg-gradient-to-br from-[#F5F5F5] to-[#E5E7EB] shadow-xl transition-shadow duration-500 sm:aspect-[4/5] sm:rounded-3xl sm:shadow-2xl">
-                <Image
-                  src={siteConfig.images.hero}
-                  alt="Dra. Eimy Stephany Pinto Arita - Medicina con Empatia"
-                  fill
-                  priority
-                  className="object-cover object-top"
-                  sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 448px, 448px"
-                />
+          {/* Image - Right side */}
+          <div className="relative order-2 lg:col-span-6 xl:col-span-7">
+            <AnimateOnScroll
+              animation="fade-in"
+              mobileAnimation="scale"
+              delay={200}
+              duration={800}
+              easing="smooth"
+            >
+              <div className="relative mx-auto max-w-sm sm:max-w-md lg:mr-0 lg:ml-auto lg:max-w-none">
+                {/* Decorative celeste element behind */}
+                <div className="absolute -right-4 top-8 h-[85%] w-[85%] rounded-[2rem] bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5 sm:-right-6 sm:top-10 lg:-right-8 lg:rounded-[2.5rem]" />
+
+                {/* Main image container */}
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg sm:aspect-[4/5] sm:rounded-3xl lg:aspect-[3/4] xl:aspect-[4/5]">
+                  <Image
+                    src={siteConfig.images.hero}
+                    alt="Dra. Eimy Stephany Pinto Arita - Medicina con Empatía"
+                    fill
+                    priority
+                    className="object-cover object-top"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                  />
+                </div>
+
+                {/* Floating Card 1 - Rehabilitación cardiopulmonar */}
+                <Floating amplitude={4} duration={5} delay={0}>
+                  <div className="absolute -left-2 top-[15%] z-20 sm:-left-4 lg:-left-8">
+                    <AnimateOnScroll
+                      animation="scale-up"
+                      delay={600}
+                      duration={500}
+                      easing="spring"
+                    >
+                      <div className="flex items-center gap-2.5 rounded-xl border border-white/60 bg-white/90 px-3 py-2.5 shadow-lg backdrop-blur-sm sm:gap-3 sm:rounded-2xl sm:px-4 sm:py-3">
+                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#38BDF8]/10 sm:h-9 sm:w-9">
+                          <HeartPulse className="h-4 w-4 text-[#38BDF8] sm:h-5 sm:w-5" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-semibold text-[#1E3A5F] sm:text-sm">
+                            Rehabilitación cardiopulmonar
+                          </p>
+                        </div>
+                      </div>
+                    </AnimateOnScroll>
+                  </div>
+                </Floating>
+
+                {/* Floating Card 2 - Salud cardiometabólica */}
+                <Floating amplitude={5} duration={6} delay={0.5}>
+                  <div className="absolute -right-2 bottom-[20%] z-20 sm:-right-4 lg:-right-6">
+                    <AnimateOnScroll
+                      animation="scale-up"
+                      delay={750}
+                      duration={500}
+                      easing="spring"
+                    >
+                      <div className="rounded-xl border border-white/60 bg-white/90 px-3 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-4 sm:py-3">
+                        <div className="flex items-center gap-2.5 sm:gap-3">
+                          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1E3A5F]/10 sm:h-9 sm:w-9">
+                            <Activity className="h-4 w-4 text-[#1E3A5F] sm:h-5 sm:w-5" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-semibold text-[#1E3A5F] sm:text-sm">
+                              Salud cardiometabólica
+                            </p>
+                            <p className="text-[10px] text-[#1E3A5F]/60 sm:text-xs">
+                              Prevención · Control · Seguimiento
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </AnimateOnScroll>
+                  </div>
+                </Floating>
               </div>
-
-              {/* Credentials badge */}
-              <AnimateOnScroll
-                animation="bounce-in"
-                delay={800}
-                duration={600}
-                easing="bounce"
-              >
-                <div className="absolute bottom-4 left-4 rounded-xl bg-[#1E3A5F] px-4 py-3 text-white shadow-lg transition-transform duration-300 hover:scale-105 sm:bottom-6 sm:left-6 sm:rounded-2xl sm:px-6 sm:py-4 sm:shadow-xl lg:bottom-8 lg:left-8">
-                  <p className="text-lg font-bold sm:text-xl">
-                    MED10809
-                  </p>
-                  <p className="text-[10px] tracking-wider text-white/70 uppercase sm:text-xs">
-                    Colegio de Medicos CR
-                  </p>
-                </div>
-              </AnimateOnScroll>
-
-              {/* Floating decorative element */}
-              <Floating amplitude={8} duration={4} delay={0.5}>
-                <div className="absolute -top-2 -right-2 hidden h-14 w-14 rotate-12 items-center justify-center rounded-xl bg-[#38BDF8] text-white shadow-lg sm:-top-4 sm:-right-4 sm:flex sm:h-16 sm:w-16 md:top-8 md:right-8 md:h-20 md:w-20 md:rounded-2xl">
-                  <Icons.heartPulse className="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10" />
-                </div>
-              </Floating>
-            </div>
-          </AnimateOnScroll>
+            </AnimateOnScroll>
+          </div>
         </div>
+
+        {/* Trust bar */}
+        <AnimateOnScroll
+          animation="fade-up"
+          mobileAnimation="fade-in"
+          delay={600}
+          duration={500}
+          easing="smooth"
+        >
+          <div className="mt-8 border-t border-[#E5E7EB]/60 pt-6 sm:mt-12 sm:pt-8 lg:mt-0 lg:border-t-0 lg:pt-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-[#1E3A5F]/60 sm:gap-x-8 lg:justify-start">
+              <div className="flex items-center gap-2">
+                <UserRound className="h-4 w-4 text-[#38BDF8]" />
+                <span>Atención personalizada</span>
+              </div>
+              <div className="hidden h-4 w-px bg-[#E5E7EB] sm:block" />
+              <div className="flex items-center gap-2">
+                <Building2 className="h-4 w-4 text-[#38BDF8]" />
+                <span>Hospital La Católica</span>
+              </div>
+              <div className="hidden h-4 w-px bg-[#E5E7EB] sm:block" />
+              <div className="flex items-center gap-2">
+                <BadgeCheck className="h-4 w-4 text-[#38BDF8]" />
+                <span>MED10809</span>
+              </div>
+            </div>
+          </div>
+        </AnimateOnScroll>
       </Container>
     </section>
   );

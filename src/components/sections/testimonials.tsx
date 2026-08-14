@@ -174,7 +174,7 @@ const row3 = testimonials.slice(20, 30);
 
 function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
   return (
-    <div className="mx-2 w-[300px] flex-shrink-0 sm:w-[350px]">
+    <div className="mx-1.5 w-[280px] flex-shrink-0 sm:mx-2 sm:w-[320px] md:w-[350px]">
       <div className="flex h-full flex-col rounded-xl border border-[#38BDF8]/20 bg-white p-4 shadow-sm sm:rounded-2xl sm:p-5">
         {/* Quote icon and rating */}
         <div className="mb-3 flex items-center justify-between">
@@ -259,10 +259,10 @@ export function Testimonials() {
       </Container>
 
       {/* Carousel rows - full width */}
-      <div className="space-y-4">
-        <CarouselRow testimonials={row1} direction="left" duration={80} />
-        <CarouselRow testimonials={row2} direction="right" duration={90} />
-        <CarouselRow testimonials={row3} direction="left" duration={85} />
+      <div className="space-y-3 sm:space-y-4">
+        <CarouselRow testimonials={row1} direction="left" duration={60} />
+        <CarouselRow testimonials={row2} direction="right" duration={70} />
+        <CarouselRow testimonials={row3} direction="left" duration={65} />
       </div>
 
       <Container>
