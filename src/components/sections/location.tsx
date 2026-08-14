@@ -196,19 +196,26 @@ export function Location() {
                 />
               </div>
 
-              {/* Consultorio badge */}
-              <div className="absolute -bottom-4 left-4 rounded-xl border-4 border-white bg-[#1E3A5F] px-4 py-3 shadow-lg">
-                <div className="flex items-center gap-2">
-                  <Icons.building className="h-5 w-5 text-[#38BDF8]" />
-                  <div>
-                    <p className="text-sm font-semibold text-white">
-                      {siteConfig.location.consultorio}
-                    </p>
-                    <p className="text-xs text-white/70">
-                      San Antonio de Guadalupe
-                    </p>
-                  </div>
-                </div>
+              {/* Navigation buttons */}
+              <div className="mt-4 flex justify-center gap-3">
+                <a
+                  href={siteConfig.location.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#1E3A5F] shadow-md transition-all hover:shadow-lg"
+                >
+                  <MapPin className="h-4 w-4 text-[#EA4335]" />
+                  Google Maps
+                </a>
+                <a
+                  href={siteConfig.location.wazeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[#1E3A5F] shadow-md transition-all hover:shadow-lg"
+                >
+                  <Icons.waze className="h-4 w-4 text-[#33CCFF]" />
+                  Waze
+                </a>
               </div>
             </div>
           </AnimateOnScroll>
