@@ -46,12 +46,6 @@ export function Cardiology() {
         <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {studies.map((study, index) => {
             const Icon = studyIcons[index];
-            const imagePlaceholders = [
-              "ECG_IMAGE",
-              "HOLTER_IMAGE",
-              "MAPA_IMAGE",
-              "CARDIOLOGIA_NO_INVASIVA_IMAGE",
-            ];
 
             return (
               <AnimateOnScroll
@@ -65,13 +59,10 @@ export function Cardiology() {
                 className="h-full"
               >
                 <div className="group flex h-full flex-col rounded-xl sm:rounded-2xl border border-[#38BDF8]/30 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#38BDF8] hover:shadow-xl">
-                  {/* Image placeholder */}
-                  <div className="relative h-32 sm:h-40 overflow-hidden rounded-t-xl sm:rounded-t-2xl bg-gradient-to-br from-[#F5F5F5] to-[#E5E7EB]">
-                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                      <Icon className="h-12 w-12 text-[#38BDF8]/30 mb-2" />
-                      <p className="text-xs text-[#1E3A5F]/40">
-                        {imagePlaceholders[index]}
-                      </p>
+                  {/* Icon area */}
+                  <div className="relative h-32 sm:h-40 overflow-hidden rounded-t-xl sm:rounded-t-2xl bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Icon className="h-14 w-14 sm:h-16 sm:w-16 text-[#38BDF8]" />
                     </div>
                   </div>
 
