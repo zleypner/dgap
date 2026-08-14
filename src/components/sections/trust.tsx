@@ -8,7 +8,6 @@ import {
   Container,
   Icons,
   AnimateOnScroll,
-  Floating,
   Button,
   ButtonMicrocopy,
   ButtonGroup,
@@ -35,30 +34,14 @@ export function Trust() {
             duration={800}
             easing="spring"
           >
-            <div className="relative">
-              {/* Main image - Consultation with patient */}
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-[#F5F5F5] to-[#E5E7EB] shadow-lg transition-shadow duration-500 hover:shadow-xl">
-                <Image
-                  src={siteConfig.images.consultation}
-                  alt="Dra. Eimy Pinto en consulta con paciente"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-
-              {/* Secondary image - Office */}
-              <Floating amplitude={6} duration={4} delay={0.5}>
-                <div className="absolute -right-8 -bottom-8 hidden h-48 w-48 overflow-hidden rounded-2xl border-4 border-white bg-gradient-to-br from-[#38BDF8]/20 to-[#38BDF8]/10 shadow-xl transition-transform duration-300 hover:scale-105 md:block">
-                  <Image
-                    src={siteConfig.images.office}
-                    alt="Consultorio Dra. Pinto"
-                    fill
-                    className="object-cover"
-                    sizes="192px"
-                  />
-                </div>
-              </Floating>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-[#F5F5F5] to-[#E5E7EB] shadow-lg transition-shadow duration-500 hover:shadow-xl">
+              <Image
+                src={siteConfig.images.consultation}
+                alt="Dra. Eimy Pinto en consulta con paciente"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </AnimateOnScroll>
 
