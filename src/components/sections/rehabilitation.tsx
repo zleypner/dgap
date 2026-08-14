@@ -120,7 +120,7 @@ export function Rehabilitation() {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5 shadow-lg">
                 <Image
-                  src="/images/services/rehabilitacionpulmonar.webp"
+                  src="/images/services/pulmonar2.webp"
                   alt="Rehabilitación cardiopulmonar - Dra. Eimy Pinto"
                   fill
                   className="object-cover"

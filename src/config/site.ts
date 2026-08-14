@@ -223,7 +223,7 @@ export const siteConfig = {
     consultation: "/images/doctor/img4.png", // Consulta con paciente
     office: "/images/doctor/img1.1.png", // En escritorio del consultorio
     // Imagenes de servicios
-    rehabilitacion: "/images/services/rehabilitacionpulmonar.webp",
+    rehabilitacion: "/images/services/pulmonar2.webp",
     rehabilitacion2: "/images/services/pulmonar2.webp",
     rehabilitacion3: "/images/services/terapiapulmonar.webp",
     cardiometabolico: "/images/services/cardiometabolico1.webp",
