@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer id="contacto" className="overflow-x-hidden border-t border-[#E5E7EB] bg-white">
       <Container className="py-8 sm:py-12 md:py-16">
-        <div className="grid gap-8 overflow-hidden sm:gap-12 lg:grid-cols-2">
+        <div className="grid gap-6 sm:gap-8 overflow-hidden md:gap-12 lg:grid-cols-2">
           {/* Left side - Info */}
           <div className="grid gap-8 sm:grid-cols-2">
             {/* Logo and description */}
@@ -138,7 +138,7 @@ export function Footer() {
             </div>
             <div className="flex h-full flex-col overflow-hidden rounded-xl border border-[#E5E7EB] bg-[#F5F5F5] sm:rounded-2xl">
               {/* Google Maps Embed */}
-              <div className="relative min-h-[180px] flex-1 sm:min-h-[200px]">
+              <div className="relative aspect-video min-h-[180px] sm:min-h-[200px] lg:aspect-auto lg:flex-1">
                 <iframe
                   src={siteConfig.location.mapsEmbed}
                   width="100%"

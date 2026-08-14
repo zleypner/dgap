@@ -66,9 +66,9 @@ export function Rehabilitation() {
                     duration={500}
                     easing="spring"
                   >
-                    <div className="group rounded-xl border border-[#38BDF8]/20 bg-white p-4 transition-all duration-300 hover:border-[#38BDF8] hover:shadow-md">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-all duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
-                        <Icon className="h-5 w-5" />
+                    <div className="group rounded-xl border border-[#38BDF8]/20 bg-white p-3 sm:p-4 transition-all duration-300 hover:border-[#38BDF8] hover:shadow-md">
+                      <div className="mb-2 sm:mb-3 flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-all duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
+                        <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                       </div>
                       <h4 className="mb-1 font-semibold text-[#1E3A5F]">
                         {benefit.title}
@@ -90,7 +90,7 @@ export function Rehabilitation() {
               duration={500}
               easing="smooth"
             >
-              <ButtonGroup className="mt-8">
+              <ButtonGroup className="mt-6 sm:mt-8">
                 <p className="mb-6 text-base font-medium text-[#1E3A5F]/80">
                   {t("rehabilitation.ctaPreText")}
                 </p>
@@ -120,7 +120,7 @@ export function Rehabilitation() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-[#38BDF8]/10 to-[#38BDF8]/5 shadow-lg">
                 {/* REHABILITACION_CARDIOPULMONAR_IMAGE placeholder */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <Icons.heartPulse className="h-20 w-20 text-[#38BDF8]/30 mb-4" />
+                  <Icons.heartPulse className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-[#38BDF8]/30 mb-4" />
                   <p className="text-sm font-medium text-[#1E3A5F]/40">
                     REHABILITACION_CARDIOPULMONAR_IMAGE
                   </p>

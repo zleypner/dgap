@@ -41,7 +41,7 @@ export function Services() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 md:gap-8 md:grid-cols-2">
           {categories.map((category, index) => {
             const Icon = categoryIcons[index];
             return (
@@ -55,11 +55,11 @@ export function Services() {
                 easing="spring"
                 className="h-full"
               >
-                <div className="group h-full rounded-2xl border border-[#38BDF8]/20 bg-white p-6 shadow-sm transition-all duration-300 hover:border-[#38BDF8] hover:shadow-lg">
+                <div className="group h-full rounded-xl sm:rounded-2xl border border-[#38BDF8]/20 bg-white p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-[#38BDF8] hover:shadow-lg">
                   {/* Header */}
                   <div className="mb-4 flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-all duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
-                      <Icon className="h-5 w-5" />
+                      <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                     </div>
                     <h3 className="text-lg font-bold text-[#1E3A5F]">
                       {category.title}
@@ -92,7 +92,7 @@ export function Services() {
           duration={500}
           easing="smooth"
         >
-          <ButtonGroup className="mt-12 flex flex-col items-center text-center">
+          <ButtonGroup className="mt-8 sm:mt-12 flex flex-col items-center text-center">
             <p className="mb-6 text-base font-medium text-[#1E3A5F]/80">
               {t("services.ctaPreText")}
             </p>

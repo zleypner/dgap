@@ -53,7 +53,7 @@ export function WhatsAppButton() {
   return (
     <div
       className={cn(
-        "fixed right-6 bottom-6 z-50 transition-all duration-500",
+        "fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50 transition-all duration-500",
         isVisible && !isContactVisible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-8 opacity-0"

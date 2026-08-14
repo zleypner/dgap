@@ -80,7 +80,7 @@ const buttonVariants = cva(
       },
       size: {
         // Default - Standard CTA (48px height)
-        default: "h-12 px-6 min-w-[180px]",
+        default: "h-12 px-6 sm:min-w-[180px]",
         // Compact - For header/nav (48px height, less min-width)
         compact: "h-12 px-5 min-w-0",
         // Full width - For mobile forms and stacked layouts

@@ -10,9 +10,9 @@ import {
   Button,
   ButtonGroup,
 } from "@/components/ui";
-import { Activity, HeartPulse, Timer, Home } from "lucide-react";
+import { Activity, HeartPulse, Timer, Home, Stethoscope } from "lucide-react";
 
-const studyIcons = [Activity, HeartPulse, Timer, Home];
+const studyIcons = [Activity, HeartPulse, Timer, Home, Stethoscope];
 
 export function Cardiology() {
   const { t } = useTranslation();
@@ -43,7 +43,7 @@ export function Cardiology() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {studies.map((study, index) => {
             const Icon = studyIcons[index];
             const imagePlaceholders = [
@@ -64,9 +64,9 @@ export function Cardiology() {
                 easing="spring"
                 className="h-full"
               >
-                <div className="group flex h-full flex-col rounded-2xl border border-[#38BDF8]/30 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#38BDF8] hover:shadow-xl">
+                <div className="group flex h-full flex-col rounded-xl sm:rounded-2xl border border-[#38BDF8]/30 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#38BDF8] hover:shadow-xl">
                   {/* Image placeholder */}
-                  <div className="relative h-40 overflow-hidden rounded-t-2xl bg-gradient-to-br from-[#F5F5F5] to-[#E5E7EB]">
+                  <div className="relative h-32 sm:h-40 overflow-hidden rounded-t-xl sm:rounded-t-2xl bg-gradient-to-br from-[#F5F5F5] to-[#E5E7EB]">
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
                       <Icon className="h-12 w-12 text-[#38BDF8]/30 mb-2" />
                       <p className="text-xs text-[#1E3A5F]/40">
@@ -76,7 +76,7 @@ export function Cardiology() {
                   </div>
 
                   {/* Content */}
-                  <div className="flex flex-1 flex-col p-6">
+                  <div className="flex flex-1 flex-col p-4 sm:p-6">
                     <h3 className="mb-3 text-lg font-bold text-[#1E3A5F] transition-colors duration-300 group-hover:text-[#38BDF8]">
                       {study.title}
                     </h3>
@@ -107,7 +107,7 @@ export function Cardiology() {
           duration={500}
           easing="smooth"
         >
-          <ButtonGroup className="mt-12 flex flex-col items-center text-center">
+          <ButtonGroup className="mt-8 sm:mt-12 flex flex-col items-center text-center">
             <p className="mb-6 text-base font-medium text-[#1E3A5F]/80">
               {t("cardiology.ctaPreText")}
             </p>

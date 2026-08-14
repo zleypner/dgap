@@ -40,14 +40,36 @@ export function Cardiometabolic() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white/10 shadow-lg">
                 {/* CARDIOMETABOLICO_IMAGE placeholder */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <Icons.trendingUp className="h-20 w-20 text-white/30 mb-4" />
+                  <Icons.trendingUp className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-white/30 mb-4" />
                   <p className="text-sm font-medium text-white/40">
                     CARDIOMETABOLICO_IMAGE
                   </p>
                 </div>
               </div>
 
-              {/* Process steps */}
+              {/* Process steps - Mobile */}
+              <div className="mt-4 rounded-xl border-2 border-white/20 bg-white/10 px-4 py-3 md:hidden">
+                <p className="mb-2 text-xs font-semibold text-white">
+                  {process.title}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {process.steps.map((step, index) => (
+                    <div key={index} className="flex items-center gap-1">
+                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#38BDF8] text-[10px] font-bold text-white">
+                        {index + 1}
+                      </span>
+                      <span className="text-xs font-medium text-white/90">
+                        {step}
+                      </span>
+                      {index < process.steps.length - 1 && (
+                        <Icons.arrowRight className="h-2.5 w-2.5 text-[#38BDF8]" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Process steps - Desktop */}
               <Floating amplitude={6} duration={4} delay={0.5}>
                 <div className="absolute -right-4 -bottom-4 hidden rounded-2xl border-4 border-[#1E3A5F] bg-white px-6 py-4 shadow-xl md:block">
                   <p className="mb-2 text-sm font-semibold text-[#1E3A5F]">
@@ -119,7 +141,7 @@ export function Cardiometabolic() {
               duration={500}
               easing="smooth"
             >
-              <div className="mb-8 grid gap-2 sm:grid-cols-2">
+              <div className="mb-8 grid gap-2 sm:gap-3 sm:grid-cols-2">
                 {services.map((service, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 flex-shrink-0 text-[#38BDF8]" />
