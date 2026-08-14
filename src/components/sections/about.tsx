@@ -227,7 +227,7 @@ export function About() {
               duration={500}
               easing="smooth"
             >
-              <ButtonGroup>
+              <ButtonGroup className="flex flex-col items-center text-center">
                 <p className="mb-6 text-base font-medium text-[#1E3A5F]/80">
                   {t("about.ctaPreText")}
                 </p>

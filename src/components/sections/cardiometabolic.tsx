@@ -160,7 +160,7 @@ export function Cardiometabolic() {
               duration={500}
               easing="smooth"
             >
-              <ButtonGroup>
+              <ButtonGroup className="flex flex-col items-center text-center">
                 <p className="mb-6 text-base font-medium text-white/80">
                   {t("cardiometabolic.ctaPreText")}
                 </p>

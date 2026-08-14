@@ -91,7 +91,7 @@ export function Rehabilitation() {
               duration={500}
               easing="smooth"
             >
-              <ButtonGroup className="mt-6 sm:mt-8">
+              <ButtonGroup className="mt-6 sm:mt-8 flex flex-col items-center text-center">
                 <p className="mb-6 text-base font-medium text-[#1E3A5F]/80">
                   {t("rehabilitation.ctaPreText")}
                 </p>
