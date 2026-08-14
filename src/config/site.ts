@@ -218,7 +218,7 @@ export const siteConfig = {
 
   // Imagenes
   images: {
-    hero: "/images/doctor/img2.png", // Foto profesional en consultorio
+    hero: "/images/doctor/img4.png", // Foto profesional en consultorio
     about: "/images/doctor/img1.2.png", // Retrato con bata blanca
     consultation: "/images/doctor/img4.png", // Consulta con paciente
     office: "/images/doctor/img1.1.png", // En escritorio del consultorio

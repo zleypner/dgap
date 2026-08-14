@@ -9,7 +9,7 @@ import {
   Container,
   Floating,
 } from "@/components/ui";
-import { HeartPulse, Activity, Building2, BadgeCheck, UserRound } from "lucide-react";
+import { Activity, Building2, BadgeCheck, UserRound } from "lucide-react";
 
 export function Hero() {
   return (
@@ -125,7 +125,7 @@ export function Hero() {
                   />
                 </div>
 
-                {/* Floating Card 1 - Rehabilitación cardiopulmonar */}
+                {/* Floating Card 1 - Imagen de rehabilitación pulmonar */}
                 <Floating amplitude={4} duration={5} delay={0}>
                   <div className="absolute -left-2 top-[15%] z-20 sm:-left-4 lg:-left-8">
                     <AnimateOnScroll
@@ -134,15 +134,14 @@ export function Hero() {
                       duration={500}
                       easing="spring"
                     >
-                      <div className="flex items-center gap-2.5 rounded-xl border border-white/60 bg-white/90 px-3 py-2.5 shadow-lg backdrop-blur-sm sm:gap-3 sm:rounded-2xl sm:px-4 sm:py-3">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#38BDF8]/10 sm:h-9 sm:w-9">
-                          <HeartPulse className="h-4 w-4 text-[#38BDF8] sm:h-5 sm:w-5" />
-                        </div>
-                        <div>
-                          <p className="text-xs font-semibold text-[#1E3A5F] sm:text-sm">
-                            Rehabilitación cardiopulmonar
-                          </p>
-                        </div>
+                      <div className="relative h-24 w-24 overflow-hidden rounded-xl border-2 border-white bg-white shadow-lg sm:h-28 sm:w-28 sm:rounded-2xl lg:h-32 lg:w-32">
+                        <Image
+                          src="/images/services/pulmonar2.webp"
+                          alt="Rehabilitación pulmonar"
+                          fill
+                          className="object-cover"
+                          sizes="128px"
+                        />
                       </div>
                     </AnimateOnScroll>
                   </div>
