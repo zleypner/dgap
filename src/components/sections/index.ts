@@ -1,0 +1,12 @@
+export { Hero } from "./hero";
+export { Pillars } from "./pillars";
+export { Trust } from "./trust";
+export { Rehabilitation } from "./rehabilitation";
+export { Cardiometabolic } from "./cardiometabolic";
+export { Cardiology } from "./cardiology";
+export { Services } from "./services";
+export { About } from "./about";
+export { Testimonials } from "./testimonials";
+export { FAQ } from "./faq";
+export { Location } from "./location";
+export { CTA } from "./cta";
