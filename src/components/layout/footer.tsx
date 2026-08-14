@@ -12,11 +12,9 @@ export function Footer() {
   return (
     <footer id="contacto" className="overflow-x-hidden border-t border-[#E5E7EB] bg-white">
       <Container className="py-8 sm:py-12 md:py-16">
-        <div className="grid gap-6 sm:gap-8 overflow-hidden md:gap-12 lg:grid-cols-2">
-          {/* Left side - Info */}
-          <div className="grid gap-8 sm:grid-cols-2">
-            {/* Logo and description */}
-            <div className="sm:col-span-2 lg:col-span-1">
+        <div className="grid gap-6 sm:gap-8 overflow-hidden md:gap-12 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Logo and description */}
+          <div>
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1E3A5F] font-bold text-white">
                   E
@@ -52,10 +50,10 @@ export function Footer() {
                   </a>
                 )}
               </div>
-            </div>
+          </div>
 
-            {/* Contact */}
-            <div>
+          {/* Contact */}
+          <div>
               <h4 className="mb-4 text-sm font-medium tracking-wider text-[#38BDF8] uppercase">
                 {t("footer.contact")}
               </h4>
@@ -100,10 +98,10 @@ export function Footer() {
                   </span>
                 </div>
               </div>
-            </div>
+          </div>
 
-            {/* Hours */}
-            <div>
+          {/* Hours */}
+          <div>
               <h4 className="mb-4 text-sm font-medium tracking-wider text-[#38BDF8] uppercase">
                 {t("footer.hours")}
               </h4>
@@ -122,57 +120,6 @@ export function Footer() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Right side - Map placeholder */}
-          <div>
-            {/* Map title and subtitle */}
-            <div className="mb-4">
-              <h4 className="mb-1 text-lg font-semibold text-[#1E3A5F]">
-                {t("location.title")}
-              </h4>
-              <p className="text-sm text-[#1E3A5F]/70">
-                {t("location.subtitle")}
-              </p>
-            </div>
-            <div className="flex h-full flex-col overflow-hidden rounded-xl border border-[#E5E7EB] bg-[#F5F5F5] sm:rounded-2xl">
-              {/* Google Maps Embed */}
-              <div className="relative aspect-video min-h-[180px] sm:min-h-[200px] lg:aspect-auto lg:flex-1">
-                <iframe
-                  src={siteConfig.location.mapsEmbed}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación del consultorio"
-                  className="absolute inset-0"
-                />
-              </div>
-              {/* Navigation buttons */}
-              <div className="flex gap-2 bg-white p-3">
-                <a
-                  href={siteConfig.location.mapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-11 flex-1 items-center justify-center gap-2 rounded-full bg-[#F5F5F5] px-4 text-[15px] font-medium text-[#1E3A5F] transition-all duration-200 hover:bg-[#E5E7EB] active:scale-[0.98]"
-                >
-                  <Icons.googleMaps className="h-[18px] w-[18px] text-[#EA4335]" />
-                  Google Maps
-                </a>
-                <a
-                  href={siteConfig.location.wazeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-11 flex-1 items-center justify-center gap-2 rounded-full bg-[#F5F5F5] px-4 text-[15px] font-medium text-[#1E3A5F] transition-all duration-200 hover:bg-[#E5E7EB] active:scale-[0.98]"
-                >
-                  <Icons.waze className="h-[18px] w-[18px] text-[#33CCFF]" />
-                  Waze
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
