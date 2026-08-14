@@ -2,8 +2,6 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import { content } from "@/config/content";
 
-const isServer = typeof window === "undefined";
-
 i18n.use(initReactI18next).init({
   resources: {
     es: {
@@ -14,7 +12,7 @@ i18n.use(initReactI18next).init({
     },
   },
   fallbackLng: "es",
-  lng: "es",
+  lng: "es", // Always start with Spanish for SSR consistency
   interpolation: {
     escapeValue: false,
   },
@@ -23,13 +21,5 @@ i18n.use(initReactI18next).init({
     useSuspense: false,
   },
 });
-
-// Only detect language from localStorage on client
-if (!isServer) {
-  const savedLang = localStorage.getItem("i18nextLng");
-  if (savedLang && (savedLang === "en" || savedLang === "es")) {
-    i18n.changeLanguage(savedLang);
-  }
-}
 
 export default i18n;
