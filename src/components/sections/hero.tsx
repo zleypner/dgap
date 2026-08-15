@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import {
   Button,
@@ -11,6 +12,8 @@ import {
 import { Building2, BadgeCheck, UserRound } from "lucide-react";
 
 export function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="inicio"
@@ -35,7 +38,7 @@ export function Hero() {
               easing="smooth"
             >
               <p className="mb-4 text-[11px] font-semibold tracking-[0.2em] text-[#38BDF8] uppercase sm:mb-5 sm:text-xs">
-                Rehabilitación y salud integral
+                {t("hero.badge")}
               </p>
             </AnimateOnScroll>
 
@@ -48,14 +51,14 @@ export function Hero() {
               easing="smooth"
             >
               <h1 className="text-[clamp(1.75rem,5vw,3.5rem)] font-bold leading-[1.1] tracking-tight text-[#1E3A5F]">
-                Rehabilitación cardiopulmonar y salud cardiometabólica
+                {t("hero.title")}
               </h1>
-              <p className="mt-2 text-[clamp(1.25rem,3.5vw,2.5rem)] font-medium leading-[1.2] tracking-tight text-[#38BDF8] italic sm:mt-3">
-                con acompañamiento cercano.
+              <p className="mt-4 max-w-lg text-base leading-relaxed text-[#1E3A5F]/70 sm:mt-5 sm:text-lg">
+                {t("hero.subtitle")}
               </p>
             </AnimateOnScroll>
 
-            {/* Description */}
+            {/* Pre-CTA text */}
             <AnimateOnScroll
               animation="fade-up"
               mobileAnimation="fade-in"
@@ -63,10 +66,8 @@ export function Hero() {
               duration={600}
               easing="smooth"
             >
-              <p className="mt-6 max-w-lg text-base leading-relaxed text-[#1E3A5F]/70 sm:mt-8 sm:text-lg">
-                Atención médica enfocada en prevención, recuperación y bienestar
-                cardiopulmonar, con una atención cercana y personalizada de la
-                Dra. Eimy Pinto.
+              <p className="mt-4 max-w-lg text-sm leading-relaxed text-[#1E3A5F]/60 sm:mt-5 sm:text-base">
+                {t("hero.ctaPreText")}
               </p>
             </AnimateOnScroll>
 
@@ -86,12 +87,12 @@ export function Hero() {
                 >
                   <Button variant="whatsapp" className="w-full sm:w-auto">
                     <Icons.whatsapp />
-                    Agendar una consulta
+                    {t("hero.primaryCta")}
                   </Button>
                 </a>
                 <a href="#servicios">
                   <Button variant="ghost" className="group w-full sm:w-auto">
-                    Conocer servicios
+                    {t("hero.secondaryCta")}
                     <Icons.arrowRight className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </Button>
                 </a>
@@ -115,7 +116,7 @@ export function Hero() {
                 {/* Main image container */}
                 <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg sm:rounded-3xl">
                   <Image
-                    src="/images/services/pulmonar2.webp"
+                    src="/images/services/breath1.webp"
                     alt="Rehabilitación cardiopulmonar - Dra. Eimy Pinto"
                     fill
                     priority
@@ -140,17 +141,17 @@ export function Hero() {
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-[#1E3A5F]/60 sm:gap-x-8 lg:justify-start">
               <div className="flex items-center gap-2">
                 <UserRound className="h-4 w-4 text-[#38BDF8]" />
-                <span>Atención personalizada</span>
-              </div>
-              <div className="hidden h-4 w-px bg-[#E5E7EB] sm:block" />
-              <div className="flex items-center gap-2">
-                <Building2 className="h-4 w-4 text-[#38BDF8]" />
-                <span>Hospital La Católica</span>
+                <span>{t("hero.trustBadge1")}</span>
               </div>
               <div className="hidden h-4 w-px bg-[#E5E7EB] sm:block" />
               <div className="flex items-center gap-2">
                 <BadgeCheck className="h-4 w-4 text-[#38BDF8]" />
-                <span>MED10809</span>
+                <span>{t("hero.trustBadge2")}</span>
+              </div>
+              <div className="hidden h-4 w-px bg-[#E5E7EB] sm:block" />
+              <div className="flex items-center gap-2">
+                <Building2 className="h-4 w-4 text-[#38BDF8]" />
+                <span>{t("hero.trustBadge3")}</span>
               </div>
             </div>
           </div>

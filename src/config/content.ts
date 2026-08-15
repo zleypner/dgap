@@ -1,6 +1,6 @@
 /**
  * Contenido centralizado para el website de la Dra. Eimy Pinto
- * Soporte para internacionalizacion (i18n) - Español e Ingles
+ * Soporte para internacionalización (i18n) - Español e Inglés
  */
 
 export const content = {
@@ -13,14 +13,14 @@ export const content = {
 
     // Header
     header: {
-      cta: "Agendar una Cita",
-      mobileCta: "Agendar Cita",
-      tagline: "Medicina con Empatía",
+      cta: "Agendar Consulta",
+      mobileCta: "Agendar",
+      tagline: "Medicina General y Cardiología",
       nav: {
         services: "Servicios",
         rehabilitation: "Rehabilitación",
-        cardiometabolic: "Cardiometabolico",
-        about: "Sobre mi",
+        cardiometabolic: "Cardiometabólico",
+        about: "Sobre mí",
         faq: "FAQ",
         contact: "Contacto",
       },
@@ -30,46 +30,49 @@ export const content = {
     hero: {
       badge: "Hospital Internacional La Católica",
       title: "Rehabilitación cardiopulmonar y salud cardiometabólica",
-      titleHighlight: "con acompañamiento cercano.",
+      titleHighlight: "",
       subtitle:
-        "Atención médica de la Dra. Eimy Pinto enfocada en rehabilitación cardiopulmonar, prevención cardiometabólica y estudios de cardiologia no invasiva en San Jose, Costa Rica.",
-      ctaPreText: "Da el primer paso hacia tu bienestar cardiovascular.",
-      primaryCta: "Agendar una cita",
+        "Atención médica orientada a la prevención, evaluación y recuperación de la salud cardiovascular y pulmonar.",
+      ctaPreText: "Un abordaje profesional para comprender tu estado de salud, identificar factores de riesgo y definir los pasos adecuados para tu bienestar.",
+      primaryCta: "Agendar una consulta",
       primaryCtaMicrocopy:
-        "Atención personalizada • Acompañamiento cercano • Hospital La Católica",
+        "Hospital La Católica • San José, Costa Rica",
       secondaryCta: "Conocer servicios",
       trustBadge1: "Médico y Cirujano",
-      trustBadge2: "Codigo MED10809",
+      trustBadge2: "Código MED10809",
       trustBadge3: "Español / English",
     },
 
     // Tres pilares principales
     pillars: {
-      badge: "Especialidades Médicas",
-      title: "Tres áreas de enfoque para tu salud cardiovascular.",
+      badge: "Áreas de Atención",
+      title: "Un enfoque integral para tu salud cardiovascular",
       subtitle:
-        "Rehabilitación, prevención cardiometabólica y diagnóstico cardiovascular con acompañamiento médico cercano.",
+        "Cada etapa requiere una atención diferente: prevenir, estudiar una condición o recuperar capacidad física. El objetivo es brindarte una valoración médica cuidadosa y una orientación clara según tus necesidades.",
       items: [
         {
           number: "01",
           title: "Rehabilitación Cardiopulmonar",
+          subtitle: "Recuperar capacidad. Retomar actividades. Avanzar con seguridad.",
           description:
-            "Programa de rehabilitación cardiaca y pulmonar para acompañarte en tu recuperacion cardiovascular. Recupera la confianza en tu cuerpo y mejora tu calidad de vida.",
-          cta: "Mas información",
+            "Programa de rehabilitación dirigido a personas con condiciones cardiovasculares o pulmonares que buscan mejorar su capacidad funcional, tolerancia al esfuerzo y calidad de vida mediante un proceso progresivo y supervisado.",
+          cta: "Más información",
         },
         {
           number: "02",
           title: "Salud Cardiometabólica",
+          subtitle: "Conocer tus factores de riesgo permite actuar a tiempo.",
           description:
-            "Valoración cardiometabólica integral para evaluar, prevenir y controlar factores de riesgo cardiovascular. Analisis de composición corporal y seguimiento personalizado.",
-          cta: "Mas información",
+            "Valoración de factores cardiovasculares y metabólicos como presión arterial, composición corporal, sedentarismo, sobrepeso y alteraciones metabólicas, con énfasis en prevención y seguimiento.",
+          cta: "Más información",
         },
         {
           number: "03",
-          title: "Cardiologia No Invasiva",
+          title: "Cardiología No Invasiva",
+          subtitle: "Información clínica para tomar mejores decisiones.",
           description:
-            "Estudios cardiovasculares precisos: Holter de 24 horas, MAPA de presión arterial y electrocardiograma con interpretacion. Diagnóstico claro sin procedimientos invasivos.",
-          cta: "Mas información",
+            "Estudios cardiovasculares como electrocardiograma, Holter y MAPA que permiten evaluar la actividad cardíaca y la presión arterial sin procedimientos invasivos.",
+          cta: "Más información",
         },
       ],
     },
@@ -77,149 +80,149 @@ export const content = {
     // Rehabilitación Cardiopulmonar
     rehabilitation: {
       badge: "Rehabilitación Cardiopulmonar en Costa Rica",
-      title: "Recuperarte también significa volver a sentir confianza en tu cuerpo.",
+      title: "Recuperar capacidad también es recuperar confianza.",
       subtitle:
-        "La rehabilitación cardiopulmonar va mas alla de lo fisico. Es un programa de rehabilitación cardiaca y pulmonar que te ayuda a recuperar la seguridad, la capacidad y la calidad de vida que mereces.",
+        "Después de una condición cardiovascular o pulmonar, actividades que antes parecían sencillas pueden representar un desafío.",
       intro:
-        "Si estas experimentando dificultad para recuperar tu capacidad física, fatiga, falta de aire, menor tolerancia al ejercicio o inseguridad al retomar actividad física, un programa de rehabilitación cardiopulmonar puede ayudarte. La Dra. Eimy Pinto ofrece acompañamiento cercano en San Jose, Costa Rica.",
+        "La rehabilitación cardiopulmonar es un proceso médico supervisado orientado a mejorar progresivamente la capacidad funcional, la tolerancia al esfuerzo y la seguridad al realizar actividad física. El objetivo es avanzar de acuerdo con tu condición clínica y ayudarte a retomar, de manera progresiva, las actividades que forman parte de tu vida.",
       benefits: [
         {
-          title: "Rehabilitación cardiaca guiada",
+          title: "Evaluación",
           description:
-            "Acompañamiento médico personalizado en cada etapa de tu recuperacion cardiovascular.",
+            "Conocer tu condición actual permite establecer un punto de partida adecuado.",
         },
         {
-          title: "Seguridad al moverte",
+          title: "Recuperación progresiva",
           description:
-            "Recupera la confianza para retomar tus actividades con tranquilidad.",
+            "El proceso se adapta a tu evolución y capacidad funcional.",
         },
         {
-          title: "Mejor calidad de vida",
+          title: "Movimiento con mayor seguridad",
           description:
-            "Mejora tu capacidad física, pulmonar y tu bienestar emocional.",
+            "Trabajamos para mejorar la tolerancia al esfuerzo y recuperar confianza al realizar actividad física.",
         },
         {
-          title: "Seguimiento continuo",
+          title: "Seguimiento",
           description:
-            "Monitoreo constante de tu progreso con ajustes personalizados.",
+            "La evolución se valora durante el proceso para realizar los ajustes que sean necesarios.",
         },
       ],
-      ctaPreText: "Tu recuperacion cardiovascular merece atención personalizada.",
-      cta: "Consultar sobre rehabilitación cardiopulmonar",
+      ctaPreText: "Volver a hacer lo que disfrutás también forma parte de recuperarte.",
+      cta: "Consultar sobre rehabilitación",
       ctaMicrocopy:
-        "Evaluación personalizada • Acompañamiento cercano • Recuperacion progresiva",
+        "Evaluación inicial • Proceso progresivo • Seguimiento médico",
     },
 
     // Salud Cardiometabólica
     cardiometabolic: {
       badge: "Salud Cardiometabólica en Costa Rica",
-      title: "La prevención cardiometabólica comienza por entender tus factores de riesgo.",
+      title: "Prevenir comienza por conocer tu riesgo.",
       subtitle:
-        "Con el Diplomado en prevención de riesgo cardiometabolico, la Dra. Eimy Pinto ofrece una valoración cardiometabólica integral para identificar y controlar factores que pueden afectar tu salud cardiovascular.",
+        "La salud cardiovascular está relacionada con múltiples factores: presión arterial, metabolismo, composición corporal, actividad física, antecedentes y hábitos de vida.",
       intro:
-        "Si presentas o quieres prevenir presión arterial alta, diabetes, sobrepeso, alteraciones metabolicas, sedentarismo o factores de riesgo cardiovascular, una valoración cardiometabólica puede darte claridad y un plan de accion personalizado.",
+        "Una valoración cardiometabólica permite analizar estos elementos de manera conjunta, identificar factores de riesgo y establecer medidas de prevención o seguimiento según cada caso. La Dra. Eimy Pinto cuenta con formación en Prevención de Riesgo Cardiometabólico y brinda valoración enfocada en la prevención y control de factores asociados a enfermedad cardiovascular.",
       process: {
-        title: "El proceso es sencillo:",
-        steps: ["Evaluar", "Entender", "Prevenir", "Acompañar"],
+        title: "El enfoque:",
+        steps: ["Evaluar", "Comprender", "Prevenir", "Dar seguimiento"],
       },
       services: [
-        "Control metabolico integral",
-        "Analisis de composición corporal",
+        "Control metabólico integral",
+        "Análisis de composición corporal",
         "Valoración cardiometabólica",
-        "Seguimiento personalizado",
-        "Prevención de riesgo cardiometabolico",
+        "Seguimiento según evolución",
+        "Prevención de riesgo cardiovascular",
       ],
       credential:
-        "Diplomado en prevención de riesgo cardiometabolico",
-      ctaPreText: "Entiende tu riesgo cardiometabolico. Toma el control de tu salud.",
-      cta: "Agendar valoración cardiometabólica",
+        "Diplomado en Prevención de Riesgo Cardiometabólico",
+      ctaPreText: "Porque muchas veces cuidar el corazón comienza antes de que aparezcan síntomas.",
+      cta: "Agendar valoración",
       ctaMicrocopy:
-        "Evaluación integral • Plan personalizado • Seguimiento continuo",
+        "Evaluación integral • Prevención • Seguimiento",
     },
 
-    // Cardiologia No Invasiva
+    // Cardiología No Invasiva
     cardiology: {
-      badge: "Cardiologia No Invasiva en Costa Rica",
-      title: "Estudios cardiovasculares precisos para respuestas claras.",
+      badge: "Cardiología No Invasiva en Costa Rica",
+      title: "Estudios cardiovasculares para una valoración más precisa.",
       subtitle:
-        "Diagnóstico cardiovascular sin procedimientos invasivos en San Jose, Costa Rica. Electrocardiograma, Holter y MAPA con interpretacion médica y acompañamiento cercano.",
+        "Los estudios de cardiología no invasiva permiten obtener información sobre el ritmo cardíaco, la actividad eléctrica del corazón y el comportamiento de la presión arterial durante las actividades cotidianas.",
       studies: [
         {
           id: "ecg",
-          title: "Electrocardiograma (ECG) con interpretacion",
+          title: "Electrocardiograma (ECG)",
           description:
-            "Evaluación de la actividad eléctrica del corazón con interpretacion médica. Disponible electrocardiograma + consulta para una valoración completa.",
-          cta: "Agendar electrocardiograma",
+            "Registro de la actividad eléctrica del corazón con interpretación médica.",
+          cta: "Agendar ECG",
         },
         {
           id: "holter",
           title: "Monitoreo Holter",
           description:
-            "Holter de 24 horas hasta 30 dias para monitoreo continuo del ritmo cardiaco. Dispositivos Spacelabs y Novi disponibles para capturar eventos que no ocurren en estudios cortos.",
+            "Monitoreo continuo del ritmo cardíaco durante un período determinado, útil para identificar alteraciones que pueden no presentarse durante un electrocardiograma convencional.",
           cta: "Consultar sobre Holter",
         },
         {
           id: "oxi-holter",
           title: "Oxi Holter 24 horas",
           description:
-            "Monitoreo combinado de oximetría y ritmo cardiaco durante 24 horas. Permite evaluar simultaneamente la saturacion de oxigeno y la actividad eléctrica del corazón.",
+            "Registro simultáneo del ritmo cardíaco y la saturación de oxígeno durante 24 horas.",
           cta: "Consultar sobre Oxi Holter",
         },
         {
           id: "mapa",
-          title: "MAPA — Monitoreo Ambulatorio de Presión Arterial",
+          title: "MAPA — Monitoreo de Presión Arterial",
           description:
-            "MAPA de 24 horas para evaluar variaciones de presión arterial a lo largo del dia. Equipo Spacelabs para mediciones precisas.",
+            "Monitoreo ambulatorio de la presión arterial durante 24 horas para evaluar su comportamiento durante el día y la noche.",
           cta: "Agendar MAPA",
         },
         {
           id: "eco",
           title: "Ecocardiograma a domicilio",
           description:
-            "Estudio ecocardiográfico en la comodidad de tu hogar para pacientes que requieren atención domiciliaria.",
+            "Estudio ecocardiográfico en el hogar para pacientes que requieren atención domiciliaria.",
           cta: "Consultar disponibilidad",
         },
       ],
-      ctaPreText: "Obtén respuestas claras sobre tu salud cardiovascular.",
-      cta: "Agendar estudio cardiovascular",
+      ctaPreText: "Cada estudio aporta información que debe interpretarse dentro del contexto clínico de cada paciente.",
+      cta: "Agendar estudio",
     },
 
     // Servicios
     services: {
       badge: "Servicios Médicos",
-      title: "Atención médica integral en Hospital La Católica.",
+      title: "Atención médica en Hospital La Católica",
       subtitle:
-        "Desde consultas hasta estudios cardiovasculares especializados, con el mismo acompañamiento cercano y empatico.",
+        "Consultas, valoraciones y estudios cardiovasculares con un enfoque integral y profesional.",
       categories: [
         {
           title: "Consultas Médicas",
-          description: "En cada consulta se evalua al paciente de manera integral: identificando factores de riesgo cardiometabolicos, analisis de peso y composición corporal, valoración de fuerza muscular y promocion de estilos de vida saludable. Con un enfoque biológico y psicosocial, utilizando equipos de medicina de precision.",
+          description: "Cada consulta incluye una valoración integral del paciente, identificando factores de riesgo, evaluando composición corporal y promoviendo hábitos de vida saludables.",
           items: [
             "Consulta de Medicina General",
             "Consulta de primera vez",
             "Consulta de seguimiento",
             "Consulta médica a domicilio",
             "Videoconsulta",
-            "Prescripcion de ejercicio con enfoque en adulto mayor",
+            "Prescripción de ejercicio",
           ],
         },
         {
           title: "Prevención Cardiometabólica",
           items: [
-            "Control metabolico integral",
-            "Analisis de composición corporal",
+            "Control metabólico integral",
+            "Análisis de composición corporal",
             "Valoración de fuerza muscular",
             "Chequeo médico general",
             "Valoración cardiometabólica anual",
             "Valoración de laboratorios",
-            "Promocion de estilos de vida saludable",
+            "Orientación en estilos de vida saludable",
           ],
         },
         {
-          title: "Estudios de Cardiologia No Invasiva",
+          title: "Estudios de Cardiología No Invasiva",
           items: [
-            "Electrocardiograma (ECG) con interpretacion",
-            "Monitoreo Holter 24 horas - hasta 30 dias",
+            "Electrocardiograma (ECG) con interpretación",
+            "Monitoreo Holter",
             "Oxi Holter 24 horas",
             "MAPA — Monitoreo de Presión Arterial 24 horas",
             "Ecocardiograma a domicilio",
@@ -239,40 +242,40 @@ export const content = {
           title: "Otros Servicios",
           items: [
             "Ferias de salud",
-            "Capacitaciones en temas de salud cardiovascular",
+            "Capacitaciones en salud cardiovascular",
           ],
         },
       ],
-      ctaPreText: "Encuentra el servicio que necesitas.",
+      ctaPreText: "¿Tenés alguna consulta sobre los servicios?",
       cta: "Agendar una cita",
     },
 
     // Sobre la doctora
     about: {
-      badge: "Médico en San Jose, Costa Rica",
+      badge: "Médico en San José, Costa Rica",
       name: "Dra. Eimy Stephany Pinto Arita",
-      tagline: "Medicina con tiempo para escucharte.",
-      credentials: "Doctor en Medicina y Cirugía • Diplomado en Prevención de Riesgo Cardiometabolico • Estudios de Cardiologia No Invasiva",
+      tagline: "Medicina con criterio, tiempo y cercanía.",
+      credentials: "Doctor en Medicina y Cirugía • Diplomado en Prevención de Riesgo Cardiometabólico • Estudios de Cardiología No Invasiva",
       intro:
-        "Amo mi profesion y siempre trato de dar lo mejor de mi con cada paciente.",
+        "Para mí, una buena atención médica comienza con una valoración cuidadosa del paciente.",
       paragraphs: [
-        "Una buena consulta médica también significa escuchar, comprender, explicar, orientar, responder preguntas, acompañar y dar tranquilidad.",
-        "Mi objetivo es que cada paciente salga de la consulta con claridad sobre su situacion, un plan concreto y la tranquilidad de sentirse acompañado en su proceso de salud. Atiendo en Hospital Internacional La Católica, en Goicoechea, San Jose.",
+        "Escuchar sus síntomas, conocer sus antecedentes, realizar las preguntas necesarias y explicar de forma comprensible lo que estamos evaluando son partes esenciales de una consulta.",
+        "Mi interés es que cada paciente pueda comprender mejor su estado de salud y tenga claridad sobre los pasos que podemos seguir, ya sea para prevenir, estudiar una condición o acompañar un proceso de recuperación. Creo en una medicina profesional y rigurosa, pero también humana.",
       ],
       quote:
-        "Entender que esta pasando con tu salud también puede darte tranquilidad.",
-      quoteAttribution: "— Dra. Eimy Pinto, sobre su filosofia de atención",
+        "Porque detrás de cada estudio, resultado o diagnóstico hay una persona que necesita comprender qué está pasando con su salud.",
+      quoteAttribution: "— Dra. Eimy Pinto",
       education: {
         title: "Formación",
         degree: "Doctor en Medicina y Cirugía",
-        university: "Universidad de Iberoamerica (UNIBE)",
+        university: "Universidad de Iberoamérica (UNIBE)",
         period: "Enero 2004 - diciembre 2010",
       },
       specialty: {
         title: "Especialización",
         items: [
-          "Diplomado en prevención de riesgo cardiometabolico",
-          "Estudios de cardiologia no invasiva",
+          "Diplomado en Prevención de Riesgo Cardiometabólico",
+          "Estudios de Cardiología No Invasiva",
         ],
       },
       certifications: {
@@ -289,159 +292,165 @@ export const content = {
         type: "Médico y Cirujano",
       },
       languages: ["Español", "English"],
-      ctaPreText: "Agenda tu cita y experimenta una atención diferente.",
+      ctaPreText: "Si querés agendar una consulta, podés escribirme.",
       cta: "Agendar con la Dra. Pinto",
-      ctaMicrocopy: "Atención personalizada • Tiempo para escucharte • Hospital La Católica",
+      ctaMicrocopy: "Hospital La Católica • San José, Costa Rica",
     },
 
-    // Trust / Por que elegirme
+    // Trust / Medicina que comienza por escuchar
     trust: {
-      badge: "Medicina con Empatía",
-      title: "Tu salud merece respuestas claras y un acompañamiento cercano.",
+      badge: "Enfoque de Atención",
+      title: "Medicina que comienza por escuchar",
       subtitle:
-        "La Dra. Eimy Pinto se diferencia por tomarse el tiempo para escuchar, explicar y acompañar a cada paciente.",
+        "Una valoración médica no consiste únicamente en revisar resultados o identificar síntomas. También requiere conocer los antecedentes del paciente, comprender cómo se siente y valorar cómo una condición está afectando su vida cotidiana. Por eso, cada consulta busca integrar criterio médico, una evaluación cuidadosa y una comunicación clara.",
       features: [
         {
-          title: "Escucha activa",
+          title: "Escuchar antes de orientar",
           description:
-            "Cada consulta comienza escuchando. Tu historia, tus preocupaciones y tus metas dan forma al plan de tratamiento.",
+            "Tus síntomas, antecedentes y preocupaciones aportan información importante para comprender tu estado de salud.",
         },
         {
-          title: "Explicaciones claras",
+          title: "Explicar con claridad",
           description:
-            "Entiendes que esta pasando con tu salud y cuales son las opciones disponibles para ti.",
+            "Conocer qué estamos evaluando, qué significan los hallazgos y cuáles son las alternativas permite participar de manera informada en el cuidado de tu salud.",
         },
         {
-          title: "Tiempo sin prisas",
+          title: "Una consulta con el tiempo necesario",
           description:
-            "Las citas se programan para que ningún tema quede sin abordar.",
+            "Las dudas también forman parte de la consulta. El objetivo es disponer del espacio necesario para abordarlas y realizar una valoración adecuada.",
         },
         {
-          title: "Acompañamiento continuo",
+          title: "Definir los siguientes pasos",
           description:
-            "Seguimiento personalizado en cada etapa de tu tratamiento o rehabilitación.",
+            "Al finalizar, buscamos que tengas claridad sobre tu situación y sobre las recomendaciones, estudios o seguimiento que correspondan.",
         },
       ],
       ctaPreText:
-        "Una consulta también debe darte el espacio para preguntar, entender y sentirte acompañado.",
-      cta: "Agendar una cita",
+        "Una atención médica rigurosa también puede sentirse cercana.",
+      cta: "Agendar una consulta",
       ctaMicrocopy:
-        "Empatía • Claridad • Acompañamiento",
+        "Valoración • Orientación • Seguimiento",
     },
 
     // Testimonios
     testimonials: {
       badge: "Testimonios",
-      title: "Lo que dicen los pacientes.",
+      title: "Lo que dicen los pacientes",
       subtitle:
-        "Experiencias reales de personas que han encontrado en la consulta un espacio de confianza y claridad.",
-      note: "[TESTIMONIOS_PENDIENTES - Se agregaran testimonios reales posteriormente]",
+        "Experiencias de personas que han recibido atención médica en la consulta.",
+      note: "[TESTIMONIOS_PENDIENTES - Se agregarán testimonios reales posteriormente]",
       placeholder: {
-        text: "Aqui apareceran testimonios reales de pacientes.",
+        text: "Aquí aparecerán testimonios reales de pacientes.",
         name: "[NOMBRE]",
         role: "[TIPO DE PACIENTE]",
       },
-      ctaPreText: "Únete a quienes ya confian en una atención diferente.",
-      cta: "Agendar tu primera cita",
+      ctaPreText: "¿Querés agendar tu consulta?",
+      cta: "Agendar cita",
     },
 
     // FAQ
     faq: {
       badge: "Preguntas Frecuentes",
-      title: "Respuestas a tus dudas sobre salud cardiovascular.",
+      title: "Respuestas a dudas comunes",
       subtitle:
-        "Si tienes mas preguntas, estoy aqui para ayudarte.",
+        "Si tenés más preguntas, podés escribirme directamente.",
       items: [
         {
-          question: "Que es la rehabilitación cardiopulmonar y para que sirve?",
+          question: "¿Qué es la rehabilitación cardiopulmonar y para qué sirve?",
           answer:
-            "La rehabilitación cardiopulmonar es un programa médico supervisado que ayuda a personas con condiciones cardiovasculares o pulmonares a recuperar su capacidad física, mejorar su calidad de vida y retomar sus actividades con seguridad. Incluye evaluación inicial, ejercicio guiado y seguimiento personalizado. La Dra. Eimy Pinto ofrece rehabilitación cardiopulmonar en San Jose, Costa Rica.",
+            "La rehabilitación cardiopulmonar es un programa médico supervisado que ayuda a personas con condiciones cardiovasculares o pulmonares a recuperar su capacidad física, mejorar su calidad de vida y retomar sus actividades con mayor seguridad. Incluye evaluación inicial, ejercicio progresivo y seguimiento médico.",
         },
         {
-          question: "Que es una valoración cardiometabólica?",
+          question: "¿Qué es una valoración cardiometabólica?",
           answer:
-            "Una valoración cardiometabólica es una evaluación integral que identifica factores de riesgo cardiovascular y metabolico como presión arterial alta, diabetes, sobrepeso o sedentarismo. Incluye analisis de composición corporal y permite crear un plan de prevención personalizado.",
+            "Es una evaluación integral que identifica factores de riesgo cardiovascular y metabólico como presión arterial elevada, alteraciones en el metabolismo, sobrepeso o sedentarismo. Incluye análisis de composición corporal y permite establecer un plan de prevención según cada caso.",
         },
         {
-          question: "Cual es la diferencia entre un electrocardiograma, Holter y MAPA?",
+          question: "¿Cuál es la diferencia entre un electrocardiograma, Holter y MAPA?",
           answer:
-            "El electrocardiograma (ECG) captura la actividad eléctrica del corazón en un momento especifico. El Holter monitorea el ritmo cardiaco de forma continua durante 24 horas a 14 dias. El MAPA (Monitoreo Ambulatorio de Presión Arterial) mide la presión arterial automaticamente durante 24 horas para evaluar variaciones a lo largo del dia.",
+            "El electrocardiograma (ECG) registra la actividad eléctrica del corazón en un momento específico. El Holter monitorea el ritmo cardíaco de forma continua durante un período determinado. El MAPA (Monitoreo Ambulatorio de Presión Arterial) mide la presión arterial automáticamente durante 24 horas para evaluar su comportamiento a lo largo del día.",
         },
         {
-          question: "Cuanto tiempo se utiliza un Holter?",
+          question: "¿Durante cuánto tiempo se utiliza un Holter?",
           answer:
-            "El Holter puede usarse desde 24 horas hasta 14 dias, dependiendo de lo que necesitemos evaluar. Un monitoreo mas prolongado permite capturar eventos cardíacos que pueden no ocurrir en un estudio corto.",
+            "El Holter puede utilizarse durante diferentes períodos según lo que se necesite evaluar. Un monitoreo más prolongado permite detectar eventos cardíacos que pueden no presentarse en estudios de corta duración.",
         },
         {
-          question: "Que es un MAPA de presión arterial?",
+          question: "¿Qué es el MAPA de presión arterial?",
           answer:
-            "El MAPA es el Monitoreo Ambulatorio de Presión Arterial. Es un estudio de 24 horas que mide tu presión arterial automaticamente mientras realizas tus actividades normales, permitiendo evaluar variaciones diurnas y nocturnas que no se detectan en una medicion puntual.",
+            "El MAPA es el Monitoreo Ambulatorio de Presión Arterial. Es un estudio de 24 horas que mide la presión arterial automáticamente mientras realizás tus actividades normales, permitiendo evaluar variaciones diurnas y nocturnas que no se detectan en una medición puntual.",
         },
         {
-          question: "Donde atiende la Dra. Eimy Pinto?",
+          question: "¿Dónde atiende la Dra. Eimy Pinto?",
           answer:
-            "La Dra. Eimy Pinto atiende en Hospital Internacional La Católica, ubicado en Goicoechea, San Jose, Costa Rica. El consultorio esta en Torre Médica, Piso 5, Consultorios 501/502, en San Antonio de Guadalupe. Tambien ofrece consultas a domicilio y videoconsulta.",
+            "La Dra. Eimy Pinto atiende en Hospital Internacional La Católica, ubicado en Goicoechea, San José, Costa Rica. El consultorio está en Torre Médica, Piso 5, Consultorios 501/502, en San Antonio de Guadalupe. También ofrece consultas a domicilio y videoconsulta.",
         },
         {
-          question: "Puedo solicitar una consulta a domicilio?",
+          question: "¿Puedo solicitar una consulta a domicilio?",
           answer:
-            "Si, la Dra. Pinto ofrece consultas médicas a domicilio y también ecocardiograma a domicilio para pacientes que lo requieran.",
+            "Sí, se ofrecen consultas médicas a domicilio y también ecocardiograma a domicilio para pacientes que lo requieran.",
         },
         {
-          question: "Como puedo agendar una cita?",
+          question: "¿Cómo puedo agendar una cita?",
           answer:
-            "Puedes agendar tu cita por WhatsApp al +506 2246 3226 o llamar al mismo numero. Te respondere lo antes posible para coordinar tu cita en Hospital La Católica.",
+            "Podés agendar tu cita por WhatsApp o llamar directamente. Te responderé lo antes posible para coordinar tu cita en Hospital La Católica.",
         },
       ],
-      cta: "Preguntame por WhatsApp",
+      cta: "Escribime por WhatsApp",
     },
 
-    // Ubicacion / Contacto
+    // Ubicación / Contacto
     location: {
-      badge: "Consultorio en San Jose",
+      badge: "Consultorio en San José",
       title: "Hospital Internacional La Católica",
-      subtitle: "Goicoechea, San Jose, Costa Rica",
+      subtitle: "Goicoechea, San José, Costa Rica",
       description:
-        "Torre Médica, Piso 5, Consultorios 501/502. San Antonio de Guadalupe, frente a los Tribunales de Justicia. Atención médica en un ambiente de confianza y profesionalismo.",
-      ctaPreText: "Agenda tu cita hoy.",
-      cta: "Agendar una cita",
+        "Torre Médica, Piso 5, Consultorios 501/502. San Antonio de Guadalupe, frente a los Tribunales de Justicia.",
+      office: "Consultorio",
+      phones: "Teléfonos",
+      email: "Correo electrónico",
+      hours: "Horario de atención",
+      ctaPreText: "¿Querés agendar tu consulta?",
+      cta: "Agendar cita",
     },
 
     // CTA Final
     cta: {
-      title: "Tu salud cardiovascular merece atención personalizada.",
+      title: "Tu salud merece una valoración cuidadosa.",
       description:
-        "Da el primer paso hacia una atención médica donde te escuchan, te explican y te acompañan en cada etapa de tu rehabilitación o prevención cardiometabólica.",
-      primaryCta: "Agendar una cita",
+        "Si necesitás evaluar tu salud cardiovascular, iniciar un proceso de rehabilitación cardiopulmonar o conocer mejor tus factores de riesgo cardiometabólico, podemos comenzar con una valoración médica.",
+      primaryCta: "Agendar una consulta",
       secondaryCta: "Conocer servicios",
       microcopy:
-        "Prevención • Acompañamiento • Confianza",
+        "Prevención • Evaluación • Seguimiento",
     },
 
     // Footer
     footer: {
       description:
-        "Dra. Eimy Pinto: rehabilitación cardiopulmonar, salud cardiometabólica y cardiologia no invasiva. Hospital Internacional La Católica, Goicoechea, San Jose, Costa Rica.",
+        "Dra. Eimy Pinto: rehabilitación cardiopulmonar, salud cardiometabólica y cardiología no invasiva. Hospital Internacional La Católica, Goicoechea, San José, Costa Rica.",
       contact: "Contacto",
       callNow: "Llamar",
       bookNow: "Agendar por WhatsApp",
       hours: "Horario de atención",
+      schedulePending: "Horario pendiente",
+      contactToSchedule: "Contactar para agendar",
       copyright: "Dra. Eimy Stephany Pinto Arita. Todos los derechos reservados.",
-      location: "Hospital Internacional La Católica • San Jose, Costa Rica",
+      location: "Hospital Internacional La Católica • San José, Costa Rica",
       credentials: "MED10809 • Colegio de Médicos y Cirujanos de Costa Rica",
     },
 
     // WhatsApp flotante
     whatsapp: {
-      tooltip: "Agendar una cita",
+      tooltip: "Agendar consulta",
       ariaLabel: "Contactar por WhatsApp",
     },
 
     // Accesibilidad
     accessibility: {
       skipToContent: "Saltar al contenido principal",
-      menuOpen: "Abrir menu",
-      menuClose: "Cerrar menu",
+      menuOpen: "Abrir menú",
+      menuClose: "Cerrar menú",
     },
   },
 
@@ -454,9 +463,9 @@ export const content = {
 
     // Header
     header: {
-      cta: "Schedule an Appointment",
-      mobileCta: "Book Now",
-      tagline: "Medicine with Empathy",
+      cta: "Schedule Appointment",
+      mobileCta: "Book",
+      tagline: "General Medicine & Cardiology",
       nav: {
         services: "Services",
         rehabilitation: "Rehabilitation",
@@ -471,13 +480,13 @@ export const content = {
     hero: {
       badge: "Hospital Internacional La Católica",
       title: "Cardiopulmonary rehabilitation and cardiometabolic health",
-      titleHighlight: "with compassionate care.",
+      titleHighlight: "",
       subtitle:
-        "Médical care by Dr. Eimy Pinto focused on cardiopulmonary rehabilitation, cardiometabolic prevention, and non-invasive cardiology studies in San Jose, Costa Rica.",
-      ctaPreText: "Take the first step toward your cardiovascular wellness.",
+        "Medical care focused on the prevention, evaluation, and recovery of cardiovascular and pulmonary health.",
+      ctaPreText: "A professional approach to understand your health status, identify risk factors, and define the appropriate steps for your wellbeing.",
       primaryCta: "Schedule an appointment",
       primaryCtaMicrocopy:
-        "Personalized care • Close support • Hospital La Católica",
+        "Hospital La Católica • San José, Costa Rica",
       secondaryCta: "View services",
       trustBadge1: "Physician & Surgeon",
       trustBadge2: "Code MED10809",
@@ -486,30 +495,33 @@ export const content = {
 
     // Three main pillars
     pillars: {
-      badge: "Médical Specialties",
-      title: "Three focus áreas for your cardiovascular health.",
+      badge: "Areas of Care",
+      title: "A comprehensive approach to your cardiovascular health",
       subtitle:
-        "Rehabilitation, cardiometabolic prevention, and cardiovascular diagnosis with close médical support.",
+        "Each stage requires different care: prevention, studying a condition, or recovering physical capacity. The goal is to provide you with careful medical assessment and clear guidance according to your needs.",
       items: [
         {
           number: "01",
           title: "Cardiopulmonary Rehabilitation",
+          subtitle: "Recover capacity. Resume activities. Move forward safely.",
           description:
-            "Cardiac and pulmonary rehabilitation program to support your cardiovascular recovery. Regain confidence in your body and improve your quality of life.",
+            "Rehabilitation program for people with cardiovascular or pulmonary conditions seeking to improve functional capacity, exercise tolerance, and quality of life through a progressive and supervised process.",
           cta: "Learn more",
         },
         {
           number: "02",
           title: "Cardiometabolic Health",
+          subtitle: "Knowing your risk factors allows you to act in time.",
           description:
-            "Comprehensive cardiometabolic assessment to evaluate, prevent, and control cardiovascular risk factors. Body composition analysis and personalized follow-up.",
+            "Assessment of cardiovascular and metabolic factors such as blood pressure, body composition, sedentary lifestyle, overweight, and metabolic alterations, with emphasis on prevention and follow-up.",
           cta: "Learn more",
         },
         {
           number: "03",
           title: "Non-Invasive Cardiology",
+          subtitle: "Clinical information for better decisions.",
           description:
-            "Precise cardiovascular studies: 24-hour Holter monitoring, ABPM blood pressure monitoring, and electrocardiogram with interpretation. Clear diagnosis without invasive procedures.",
+            "Cardiovascular studies such as electrocardiogram, Holter, and ABPM that allow evaluation of cardiac activity and blood pressure without invasive procedures.",
           cta: "Learn more",
         },
       ],
@@ -518,129 +530,129 @@ export const content = {
     // Cardiopulmonary Rehabilitation
     rehabilitation: {
       badge: "Cardiopulmonary Rehabilitation in Costa Rica",
-      title: "Recovery also means regaining confidence in your body.",
+      title: "Recovering capacity also means regaining confidence.",
       subtitle:
-        "Cardiopulmonary rehabilitation goes beyond the physical. It's a cardiac and pulmonary rehabilitation program that helps you regain the security, capacity, and quality of life you deserve.",
+        "After a cardiovascular or pulmonary condition, activities that once seemed simple can become challenging.",
       intro:
-        "If you're experiencing difficulty recovering your physical capacity, fatigue, shortness of breath, reduced exercise tolerance, or uncertainty about resuming physical activity, a cardiopulmonary rehabilitation program can help. Dr. Eimy Pinto offers compassionate care in San Jose, Costa Rica.",
+        "Cardiopulmonary rehabilitation is a supervised medical process aimed at progressively improving functional capacity, exercise tolerance, and safety when performing physical activity. The goal is to progress according to your clinical condition and help you gradually resume the activities that are part of your life.",
       benefits: [
         {
-          title: "Guided cardiac rehabilitation",
+          title: "Evaluation",
           description:
-            "Personalized médical support at every stage of your cardiovascular recovery.",
+            "Understanding your current condition allows establishing an appropriate starting point.",
         },
         {
-          title: "Safe movement",
+          title: "Progressive recovery",
           description:
-            "Regain confidence to resume your activities with peace of mind.",
+            "The process adapts to your evolution and functional capacity.",
         },
         {
-          title: "Better quality of life",
+          title: "Safer movement",
           description:
-            "Improve your physical, pulmonary capacity and emotional wellbeing.",
+            "We work to improve exercise tolerance and regain confidence when performing physical activity.",
         },
         {
-          title: "Continuous monitoring",
+          title: "Follow-up",
           description:
-            "Constant tracking of your progress with personalized adjustments.",
+            "Progress is assessed during the process to make necessary adjustments.",
         },
       ],
-      ctaPreText: "Your cardiovascular recovery deserves personalized attention.",
-      cta: "Inquire about cardiopulmonary rehabilitation",
+      ctaPreText: "Getting back to what you enjoy is also part of recovery.",
+      cta: "Inquire about rehabilitation",
       ctaMicrocopy:
-        "Personalized evaluation • Close support • Progressive recovery",
+        "Initial evaluation • Progressive process • Medical follow-up",
     },
 
     // Cardiometabolic Health
     cardiometabolic: {
       badge: "Cardiometabolic Health in Costa Rica",
-      title: "Cardiometabolic prevention starts by understanding your risk factors.",
+      title: "Prevention starts with knowing your risk.",
       subtitle:
-        "With the Diploma in cardiometabolic risk prevention, Dr. Eimy Pinto offers a comprehensive cardiometabolic assessment to identify and control factors that may affect your cardiovascular health.",
+        "Cardiovascular health is related to multiple factors: blood pressure, metabolism, body composition, physical activity, history, and lifestyle habits.",
       intro:
-        "If you have or want to prevent high blood pressure, diabetes, overweight, metabolic alterations, sedentary lifestyle, or cardiovascular risk factors, a cardiometabolic assessment can give you clarity and a personalized action plan.",
+        "A cardiometabolic assessment allows analyzing these elements together, identifying risk factors, and establishing prevention or follow-up measures for each case. Dr. Eimy Pinto has training in Cardiometabolic Risk Prevention and provides assessment focused on the prevention and control of factors associated with cardiovascular disease.",
       process: {
-        title: "The process is simple:",
-        steps: ["Evaluate", "Understand", "Prevent", "Support"],
+        title: "The approach:",
+        steps: ["Evaluate", "Understand", "Prevent", "Follow up"],
       },
       services: [
         "Comprehensive metabolic control",
         "Body composition analysis",
         "Cardiometabolic assessment",
-        "Personalized follow-up",
-        "Cardiometabolic risk prevention",
+        "Follow-up according to evolution",
+        "Cardiovascular risk prevention",
       ],
-      credential: "Diploma in cardiometabolic risk prevention",
-      ctaPreText: "Understand your cardiometabolic risk. Take control of your health.",
-      cta: "Schedule cardiometabolic assessment",
+      credential: "Diploma in Cardiometabolic Risk Prevention",
+      ctaPreText: "Because often caring for your heart begins before symptoms appear.",
+      cta: "Schedule assessment",
       ctaMicrocopy:
-        "Comprehensive evaluation • Personalized plan • Continuous follow-up",
+        "Comprehensive evaluation • Prevention • Follow-up",
     },
 
     // Non-Invasive Cardiology
     cardiology: {
       badge: "Non-Invasive Cardiology in Costa Rica",
-      title: "Precise cardiovascular studies for clear answers.",
+      title: "Cardiovascular studies for more precise assessment.",
       subtitle:
-        "Cardiovascular diagnosis without invasive procedures in San Jose, Costa Rica. Electrocardiogram, Holter, and ABPM with médical interpretation and compassionate care.",
+        "Non-invasive cardiology studies allow obtaining information about heart rhythm, the electrical activity of the heart, and blood pressure behavior during daily activities.",
       studies: [
         {
           id: "ecg",
-          title: "Electrocardiogram (ECG) with interpretation",
+          title: "Electrocardiogram (ECG)",
           description:
-            "Evaluation of the heart's eléctrical activity with médical interpretation. Electrocardiogram + consultation available for complete assessment.",
-          cta: "Schedule electrocardiogram",
+            "Recording of the heart's electrical activity with medical interpretation.",
+          cta: "Schedule ECG",
         },
         {
           id: "holter",
           title: "Holter Monitoring",
           description:
-            "24-hour to 30-day Holter monitoring for continuous heart rhythm tracking. Spacelabs and Novi devices available to capture events that don't occur in short studies.",
+            "Continuous monitoring of heart rhythm over a determined period, useful for identifying alterations that may not occur during a conventional electrocardiogram.",
           cta: "Inquire about Holter",
         },
         {
           id: "oxi-holter",
           title: "Oxi Holter 24 hours",
           description:
-            "Combined oximetry and heart rhythm monitoring for 24 hours. Allows simultaneous evaluation of oxygen saturation and heart eléctrical activity.",
+            "Simultaneous recording of heart rhythm and oxygen saturation for 24 hours.",
           cta: "Inquire about Oxi Holter",
         },
         {
           id: "mapa",
-          title: "ABPM — Ambulatory Blood Pressure Monitoring",
+          title: "ABPM — Blood Pressure Monitoring",
           description:
-            "24-hour ABPM to evaluate blood pressure variations throughout the day. Spacelabs equipment for precise measurements.",
+            "Ambulatory blood pressure monitoring for 24 hours to evaluate its behavior during day and night.",
           cta: "Schedule ABPM",
         },
         {
           id: "eco",
           title: "Home echocardiogram",
           description:
-            "Echocardiographic study in the comfort of your home for patients requiring home care.",
+            "Echocardiographic study at home for patients requiring home care.",
           cta: "Check availability",
         },
       ],
-      ctaPreText: "Get clear answers about your cardiovascular health.",
-      cta: "Schedule cardiovascular study",
+      ctaPreText: "Each study provides information that must be interpreted within each patient's clinical context.",
+      cta: "Schedule study",
     },
 
     // Services
     services: {
-      badge: "Médical Services",
-      title: "Comprehensive médical care at Hospital La Católica.",
+      badge: "Medical Services",
+      title: "Medical care at Hospital La Católica",
       subtitle:
-        "From consultations to specialized cardiovascular studies, with the same compassionate and close support.",
+        "Consultations, assessments, and cardiovascular studies with a comprehensive and professional approach.",
       categories: [
         {
-          title: "Médical Consultations",
-          description: "Each consultation includes a comprehensive patient evaluation: identifying cardiometabolic risk factors, weight and body composition analysis, muscle strength assessment, and promotion of healthy lifestyles. With a biological and psychosocial approach, using precision medicine equipment.",
+          title: "Medical Consultations",
+          description: "Each consultation includes a comprehensive patient assessment, identifying risk factors, evaluating body composition, and promoting healthy lifestyle habits.",
           items: [
             "General Medicine Consultation",
             "First-time consultation",
             "Follow-up consultation",
-            "Home médical consultation",
+            "Home medical consultation",
             "Video consultation",
-            "Exercise prescription with focus on older adults",
+            "Exercise prescription",
           ],
         },
         {
@@ -649,26 +661,26 @@ export const content = {
             "Comprehensive metabolic control",
             "Body composition analysis",
             "Muscle strength assessment",
-            "General médical checkup",
+            "General medical checkup",
             "Annual cardiometabolic assessment",
             "Laboratory evaluation",
-            "Healthy lifestyle promotion",
+            "Healthy lifestyle guidance",
           ],
         },
         {
           title: "Non-Invasive Cardiology Studies",
           items: [
             "Electrocardiogram (ECG) with interpretation",
-            "Holter Monitoring 24 hours - up to 30 days",
+            "Holter Monitoring",
             "Oxi Holter 24 hours",
-            "ABPM — Blood Pressure Monitoring 24 hours",
+            "ABPM — 24-hour Blood Pressure Monitoring",
             "Home echocardiogram",
           ],
         },
         {
           title: "Procedures",
           items: [
-            "Médical certificate",
+            "Medical certificate",
             "License certificate",
             "Pap smear + consultation",
             "Suture removal",
@@ -679,40 +691,40 @@ export const content = {
           title: "Other Services",
           items: [
             "Health fairs",
-            "Cardiovascular health training sessions",
+            "Cardiovascular health training",
           ],
         },
       ],
-      ctaPreText: "Find the service you need.",
+      ctaPreText: "Do you have questions about the services?",
       cta: "Schedule an appointment",
     },
 
     // About the doctor
     about: {
-      badge: "Physician in San Jose, Costa Rica",
-      name: "Dra. Eimy Stephany Pinto Arita",
-      tagline: "Medicine with time to listen.",
+      badge: "Physician in San José, Costa Rica",
+      name: "Dr. Eimy Stephany Pinto Arita",
+      tagline: "Medicine with criteria, time, and care.",
       credentials: "Doctor of Medicine and Surgery • Diploma in Cardiometabolic Risk Prevention • Non-Invasive Cardiology Studies",
       intro:
-        "I love my profession and always try to give my best with each patient.",
+        "For me, good medical care begins with a careful patient assessment.",
       paragraphs: [
-        "A good médical consultation also means listening, understanding, explaining, guiding, answering questions, supporting, and providing peace of mind.",
-        "My goal is for every patient to leave the consultation with clarity about their situation, a concrete plan, and the peace of mind of feeling supported in their health journey. I practice at Hospital Internacional La Católica in Goicoechea, San Jose.",
+        "Listening to symptoms, learning about history, asking necessary questions, and explaining in an understandable way what we are evaluating are essential parts of a consultation.",
+        "My interest is for each patient to better understand their health status and have clarity about the steps we can follow, whether for prevention, studying a condition, or accompanying a recovery process. I believe in professional and rigorous medicine, but also humane.",
       ],
       quote:
-        "Understanding what's happening with your health can also give you peace of mind.",
-      quoteAttribution: "— Dra. Eimy Pinto, on her care philosophy",
+        "Because behind every study, result, or diagnosis there is a person who needs to understand what is happening with their health.",
+      quoteAttribution: "— Dr. Eimy Pinto",
       education: {
         title: "Education",
         degree: "Doctor of Medicine and Surgery",
-        university: "Universidad de Iberoamerica (UNIBE)",
+        university: "Universidad de Iberoamérica (UNIBE)",
         period: "January 2004 - December 2010",
       },
       specialty: {
         title: "Specialization",
         items: [
-          "Diploma in cardiometabolic risk prevention",
-          "Non-invasive cardiology studies",
+          "Diploma in Cardiometabolic Risk Prevention",
+          "Non-Invasive Cardiology Studies",
         ],
       },
       certifications: {
@@ -729,86 +741,87 @@ export const content = {
         type: "Physician & Surgeon",
       },
       languages: ["Spanish", "English"],
-      ctaPreText: "Schedule your appointment and experience different care.",
+      ctaPreText: "If you want to schedule a consultation, you can contact me.",
       cta: "Book with Dr. Pinto",
-      ctaMicrocopy: "Personalized care • Time to listen • Hospital La Católica",
+      ctaMicrocopy: "Hospital La Católica • San José, Costa Rica",
     },
 
-    // Trust / Why choose me
+    // Trust / Medicine that starts by listening
     trust: {
-      badge: "Medicine with Empathy",
-      title: "Your health deserves clear answers and close support.",
+      badge: "Care Approach",
+      title: "Medicine that starts by listening",
       subtitle:
-        "Dr. Eimy Pinto differentiates herself by taking the time to listen, explain, and support each patient.",
+        "A medical assessment is not just about reviewing results or identifying symptoms. It also requires knowing the patient's history, understanding how they feel, and assessing how a condition is affecting their daily life. That's why each consultation seeks to integrate medical criteria, careful evaluation, and clear communication.",
       features: [
         {
-          title: "Active listening",
+          title: "Listen before guiding",
           description:
-            "Every consultation begins with listening. Your story, concerns, and goals shape the treatment plan.",
+            "Your symptoms, history, and concerns provide important information to understand your health status.",
         },
         {
-          title: "Clear explanations",
+          title: "Explain clearly",
           description:
-            "You understand what's happening with your health and what options are available to you.",
+            "Knowing what we are evaluating, what the findings mean, and what the alternatives are allows you to participate in an informed way in your health care.",
         },
         {
-          title: "Unhurried time",
+          title: "A consultation with necessary time",
           description:
-            "Appointments are scheduled so no topic is left unaddressed.",
+            "Questions are also part of the consultation. The goal is to have the necessary space to address them and perform an adequate assessment.",
         },
         {
-          title: "Continuous support",
+          title: "Define next steps",
           description:
-            "Personalized follow-up at every stage of your treatment or rehabilitation.",
+            "At the end, we seek for you to have clarity about your situation and about the recommendations, studies, or follow-up that apply.",
         },
       ],
       ctaPreText:
-        "A consultation should also give you space to ask, understand, and feel supported.",
+        "Rigorous medical care can also feel caring.",
       cta: "Schedule an appointment",
-      ctaMicrocopy: "Empathy • Clarity • Support",
+      ctaMicrocopy:
+        "Assessment • Guidance • Follow-up",
     },
 
     // Testimonials
     testimonials: {
       badge: "Testimonials",
-      title: "What patients say.",
+      title: "What patients say",
       subtitle:
-        "Real experiences from people who have found a space of trust and clarity in consultation.",
+        "Experiences from people who have received medical care in consultation.",
       note: "[TESTIMONIALS_PENDING - Real testimonials will be added later]",
       placeholder: {
         text: "Real patient testimonials will appear here.",
         name: "[NAME]",
         role: "[PATIENT TYPE]",
       },
-      ctaPreText: "Join those who already trust in different care.",
-      cta: "Schedule your first appointment",
+      ctaPreText: "Would you like to schedule your consultation?",
+      cta: "Schedule appointment",
     },
 
     // FAQ
     faq: {
       badge: "Frequently Asked Questions",
-      title: "Answers to your cardiovascular health questions.",
-      subtitle: "If you have more questions, I'm here to help.",
+      title: "Answers to common questions",
+      subtitle: "If you have more questions, you can contact me directly.",
       items: [
         {
           question: "What is cardiopulmonary rehabilitation and what is it for?",
           answer:
-            "Cardiopulmonary rehabilitation is a supervised médical program that helps people with cardiovascular or pulmonary conditions recover their physical capacity, improve their quality of life, and safely resume their activities. It includes initial evaluation, guided exercise, and personalized follow-up. Dr. Eimy Pinto offers cardiopulmonary rehabilitation in San Jose, Costa Rica.",
+            "Cardiopulmonary rehabilitation is a supervised medical program that helps people with cardiovascular or pulmonary conditions recover their physical capacity, improve their quality of life, and resume their activities more safely. It includes initial evaluation, progressive exercise, and medical follow-up.",
         },
         {
           question: "What is a cardiometabolic assessment?",
           answer:
-            "A cardiometabolic assessment is a comprehensive evaluation that identifies cardiovascular and metabolic risk factors such as high blood pressure, diabetes, overweight, or sedentary lifestyle. It includes body composition analysis and allows creating a personalized prevention plan.",
+            "It is a comprehensive evaluation that identifies cardiovascular and metabolic risk factors such as elevated blood pressure, metabolic alterations, overweight, or sedentary lifestyle. It includes body composition analysis and allows establishing a prevention plan for each case.",
         },
         {
           question: "What's the difference between an electrocardiogram, Holter, and ABPM?",
           answer:
-            "The electrocardiogram (ECG) captures the heart's eléctrical activity at a specific moment. The Holter monitors heart rhythm continuously for 24 hours to 14 days. ABPM (Ambulatory Blood Pressure Monitoring) measures blood pressure automatically for 24 hours to evaluate variations throughout the day.",
+            "The electrocardiogram (ECG) records the heart's electrical activity at a specific moment. The Holter monitors heart rhythm continuously over a determined period. ABPM (Ambulatory Blood Pressure Monitoring) measures blood pressure automatically for 24 hours to evaluate its behavior throughout the day.",
         },
         {
           question: "How long is a Holter monitor used?",
           answer:
-            "The Holter can be used from 24 hours up to 14 days, depending on what we need to evaluate. Longer monitoring allows capturing cardiac events that may not occur in a short study.",
+            "The Holter can be used for different periods depending on what needs to be evaluated. Longer monitoring allows detecting cardiac events that may not occur in short-duration studies.",
         },
         {
           question: "What is blood pressure ABPM?",
@@ -818,59 +831,65 @@ export const content = {
         {
           question: "Where does Dr. Eimy Pinto practice?",
           answer:
-            "Dr. Eimy Pinto practices at Hospital Internacional La Católica, located in Goicoechea, San Jose, Costa Rica. The office is in Torre Médica, Floor 5, Offices 501/502, in San Antonio de Guadalupe. She also offers home consultations and video consultations.",
+            "Dr. Eimy Pinto practices at Hospital Internacional La Católica, located in Goicoechea, San José, Costa Rica. The office is in Torre Médica, Floor 5, Offices 501/502, in San Antonio de Guadalupe. She also offers home consultations and video consultations.",
         },
         {
           question: "Can I request a home consultation?",
           answer:
-            "Yes, Dr. Pinto offers home médical consultations and also home echocardiograms for patients who require them.",
+            "Yes, home medical consultations and home echocardiograms are offered for patients who require them.",
         },
         {
           question: "How can I schedule an appointment?",
           answer:
-            "You can schedule your appointment via WhatsApp at +506 2246 3226 or call the same number. I'll respond as soon as possible to coordinate your appointment at Hospital La Católica.",
+            "You can schedule your appointment via WhatsApp or call directly. I'll respond as soon as possible to coordinate your appointment at Hospital La Católica.",
         },
       ],
-      cta: "Ask me on WhatsApp",
+      cta: "Message me on WhatsApp",
     },
 
     // Location / Contact
     location: {
-      badge: "Office in San Jose",
+      badge: "Office in San José",
       title: "Hospital Internacional La Católica",
-      subtitle: "Goicoechea, San Jose, Costa Rica",
+      subtitle: "Goicoechea, San José, Costa Rica",
       description:
-        "Torre Médica, Floor 5, Offices 501/502. San Antonio de Guadalupe, across from the Courts of Justice. Médical care in an environment of trust and professionalism.",
-      ctaPreText: "Schedule your appointment today.",
-      cta: "Schedule an appointment",
+        "Torre Médica, Floor 5, Offices 501/502. San Antonio de Guadalupe, across from the Courts of Justice.",
+      office: "Office",
+      phones: "Phone Numbers",
+      email: "Email",
+      hours: "Office Hours",
+      ctaPreText: "Would you like to schedule your consultation?",
+      cta: "Schedule appointment",
     },
 
     // Final CTA
     cta: {
-      title: "Your cardiovascular health deserves personalized attention.",
+      title: "Your health deserves careful assessment.",
       description:
-        "Take the first step toward médical care where they listen to you, explain to you, and support you at every stage of your rehabilitation or cardiometabolic prevention.",
+        "If you need to evaluate your cardiovascular health, start a cardiopulmonary rehabilitation process, or better understand your cardiometabolic risk factors, we can begin with a medical assessment.",
       primaryCta: "Schedule an appointment",
       secondaryCta: "View services",
-      microcopy: "Prevention • Support • Trust",
+      microcopy: "Prevention • Evaluation • Follow-up",
     },
 
     // Footer
     footer: {
       description:
-        "Dr. Eimy Pinto: cardiopulmonary rehabilitation, cardiometabolic health, and non-invasive cardiology. Hospital Internacional La Católica, Goicoechea, San Jose, Costa Rica.",
+        "Dr. Eimy Pinto: cardiopulmonary rehabilitation, cardiometabolic health, and non-invasive cardiology. Hospital Internacional La Católica, Goicoechea, San José, Costa Rica.",
       contact: "Contact",
       callNow: "Call",
       bookNow: "Book via WhatsApp",
       hours: "Office hours",
-      copyright: "Dra. Eimy Stephany Pinto Arita. All rights reserved.",
-      location: "Hospital Internacional La Católica • San Jose, Costa Rica",
+      schedulePending: "Schedule pending",
+      contactToSchedule: "Contact to schedule",
+      copyright: "Dr. Eimy Stephany Pinto Arita. All rights reserved.",
+      location: "Hospital Internacional La Católica • San José, Costa Rica",
       credentials: "MED10809 • College of Physicians and Surgeons of Costa Rica",
     },
 
     // Floating WhatsApp
     whatsapp: {
-      tooltip: "Schedule an appointment",
+      tooltip: "Schedule appointment",
       ariaLabel: "Contact via WhatsApp",
     },
 

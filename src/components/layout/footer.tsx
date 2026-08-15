@@ -112,10 +112,10 @@ export function Footer() {
                     <p className="font-medium text-[#1E3A5F]">
                       {siteConfig.schedule.weekdays !== "[SCHEDULE]"
                         ? siteConfig.schedule.weekdays
-                        : "Horario pendiente"}
+                        : t("footer.schedulePending")}
                     </p>
                     <p className="text-[#1E3A5F]/70">
-                      Contactar para agendar
+                      {t("footer.contactToSchedule")}
                     </p>
                   </div>
                 </div>

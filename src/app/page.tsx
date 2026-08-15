@@ -3,7 +3,6 @@
 import {
   Hero,
   Pillars,
-  Trust,
   Rehabilitation,
   Cardiometabolic,
   Cardiology,
@@ -23,9 +22,6 @@ export default function HomePage() {
 
       {/* Pillars - Three main areas overview with navigation */}
       <Pillars />
-
-      {/* Trust - Why choose the doctor (empathy focus) */}
-      <Trust />
 
       {/* Rehabilitation - Cardiopulmonary rehabilitation details */}
       <Rehabilitation />

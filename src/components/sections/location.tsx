@@ -60,7 +60,7 @@ export function Location() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#1E3A5F]">
-                      Consultorio
+                      {t("location.office")}
                     </p>
                     <p className="text-sm text-[#1E3A5F]/70">
                       {siteConfig.location.consultorio}
@@ -92,7 +92,7 @@ export function Location() {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#1E3A5F]">Telefonos</p>
+                    <p className="font-semibold text-[#1E3A5F]">{t("location.phones")}</p>
                     <a
                       href={siteConfig.contact.phoneLink}
                       className="block text-sm text-[#38BDF8] hover:underline"
@@ -114,7 +114,7 @@ export function Location() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#1E3A5F]">Correo electronico</p>
+                    <p className="font-semibold text-[#1E3A5F]">{t("location.email")}</p>
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
                       className="block text-sm text-[#38BDF8] hover:underline"
@@ -137,7 +137,7 @@ export function Location() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#1E3A5F]">
-                      Horario de atencion
+                      {t("location.hours")}
                     </p>
                     <p className="text-sm text-[#1E3A5F]/70">
                       {siteConfig.contact.hours}
