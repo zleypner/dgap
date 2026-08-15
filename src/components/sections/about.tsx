@@ -13,7 +13,7 @@ import {
   ButtonMicrocopy,
   ButtonGroup,
 } from "@/components/ui";
-import { GraduationCap, Award, Building2, Languages } from "lucide-react";
+import { GraduationCap, Award, Languages } from "lucide-react";
 
 export function About() {
   const { t } = useTranslation();
@@ -24,10 +24,6 @@ export function About() {
     period: string;
   };
   const specialty = t("about.specialty", { returnObjects: true }) as {
-    title: string;
-    items: string[];
-  };
-  const certifications = t("about.certifications", { returnObjects: true }) as {
     title: string;
     items: string[];
   };
@@ -42,21 +38,69 @@ export function About() {
 
   return (
     <Section
-      id="sobre-mi"
-      className="overflow-hidden bg-white"
+      id="sobre"
+      className="overflow-hidden bg-white py-10 sm:py-12 lg:py-14"
     >
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          {/* Image placeholder */}
+        {/* ═══════════════════════════════════════════════════════════════
+            LEVEL 1 — Introduction (wider, horizontal layout)
+        ═══════════════════════════════════════════════════════════════ */}
+        <AnimateOnScroll
+          animation="blur-in"
+          mobileAnimation="fade-in"
+          duration={600}
+          easing="smooth"
+        >
+          <div className="mx-auto mb-8 max-w-[950px] sm:mb-10 lg:mb-12">
+            {/* Badge */}
+            <p className="mb-2 text-xs font-semibold tracking-widest text-[#38BDF8] uppercase sm:text-sm lg:mb-3">
+              {t("about.badge")}
+            </p>
+
+            {/* Name - clamp typography */}
+            <h2 className="mb-2 text-[clamp(1.625rem,3.7vw,2.5rem)] font-bold leading-[1.1] text-[#1E3A5F] sm:mb-3">
+              {t("about.name")}
+            </h2>
+
+            {/* Tagline */}
+            <p className="mb-3 text-lg font-medium text-[#38BDF8] sm:text-xl">
+              {t("about.tagline")}
+            </p>
+
+            {/* Credentials summary */}
+            <p className="mb-5 text-sm text-[#1E3A5F]/60 sm:mb-6">
+              {t("about.credentials")}
+            </p>
+
+            {/* Intro paragraph */}
+            <p className="mb-3 text-base font-medium leading-[1.6] text-[#1E3A5F]/80 sm:text-lg">
+              {t("about.intro")}
+            </p>
+
+            {/* Additional paragraphs */}
+            {paragraphs.map((paragraph, index) => (
+              <p key={index} className="mb-3 text-sm leading-[1.6] text-[#1E3A5F]/70 sm:text-base">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </AnimateOnScroll>
+
+        {/* ═══════════════════════════════════════════════════════════════
+            LEVEL 2 — Image + Quote/Credentials/CTA (2 columns 50/50)
+        ═══════════════════════════════════════════════════════════════ */}
+        <div className="grid items-start gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-8">
+
+          {/* LEFT: Image */}
           <AnimateOnScroll
             animation="swing-in"
             mobileAnimation="scale"
             duration={800}
             easing="spring"
+            className="order-first"
           >
             <div className="relative">
-              {/* Main image */}
-              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gradient-to-br from-[#38BDF8]/10 to-[#1E3A5F]/10 shadow-lg">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-lg lg:aspect-[1.15/1] lg:rounded-[28px]">
                 <Image
                   src={siteConfig.images.about}
                   alt="Dra. Eimy Stephany Pinto Arita"
@@ -68,167 +112,148 @@ export function About() {
 
               {/* Credentials floating card */}
               <Floating amplitude={6} duration={4} delay={0.5}>
-                <div className="absolute -right-4 -bottom-4 hidden rounded-xl border-4 border-white bg-[#1E3A5F] px-5 py-4 shadow-xl md:block">
-                  <p className="text-xs font-medium text-[#38BDF8] uppercase tracking-wider">
+                <div className="absolute -right-3 -bottom-3 hidden rounded-xl border-4 border-white bg-[#1E3A5F] px-4 py-3 shadow-xl md:block lg:-right-4 lg:-bottom-4">
+                  <p className="text-[10px] font-medium text-[#38BDF8] uppercase tracking-wider">
                     {college.title}
                   </p>
-                  <p className="mt-1 text-lg font-bold text-white">
+                  <p className="mt-0.5 text-base font-bold text-white lg:text-lg">
                     {college.code}
                   </p>
-                  <p className="text-sm text-white/70">
+                  <p className="text-xs text-white/70">
                     {college.type} • {college.status}
                   </p>
                 </div>
               </Floating>
-
-              {/* Decorative elements */}
-              <Floating amplitude={8} duration={5} delay={0}>
-                <div className="absolute -top-4 -left-4 hidden h-20 w-20 rounded-2xl bg-[#38BDF8]/20 lg:block" />
-              </Floating>
             </div>
           </AnimateOnScroll>
 
-          {/* Content */}
-          <div>
-            <AnimateOnScroll
-              animation="blur-in"
-              mobileAnimation="fade-in"
-              duration={600}
-              easing="smooth"
-            >
-              <p className="mb-4 text-sm font-medium tracking-wider text-[#38BDF8] uppercase">
-                {t("about.badge")}
-              </p>
-              <h2 className="mb-2 text-3xl font-bold text-[#1E3A5F] sm:text-4xl">
-                {t("about.name")}
-              </h2>
-              <p className="mb-2 text-lg font-medium text-[#38BDF8]">
-                {t("about.tagline")}
-              </p>
-              <p className="mb-6 text-sm text-[#1E3A5F]/60">
-                {t("about.credentials")}
-              </p>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll
-              animation="fade-up"
-              mobileAnimation="fade-in"
-              delay={100}
-              duration={500}
-              easing="smooth"
-            >
-              <p className="mb-4 text-lg font-medium text-[#1E3A5F]/80">
-                {t("about.intro")}
-              </p>
-              {paragraphs.map((paragraph, index) => (
-                <p key={index} className="mb-4 text-[#1E3A5F]/70">
-                  {paragraph}
-                </p>
-              ))}
-            </AnimateOnScroll>
-
+          {/* RIGHT: Quote + Credentials grid + CTA */}
+          <div className="flex flex-col">
             {/* Quote */}
             <AnimateOnScroll
               animation="scale-up"
               mobileAnimation="fade-up"
-              delay={200}
+              delay={50}
               duration={500}
               easing="spring"
             >
-              <blockquote className="mb-8 border-l-4 border-[#38BDF8] pl-4 italic">
-                <p className="text-lg text-[#1E3A5F]/80">
+              <blockquote className="mb-5 border-l-4 border-[#38BDF8] pl-4 italic sm:mb-6">
+                <p className="text-base text-[#1E3A5F]/80 sm:text-lg">
                   &ldquo;{t("about.quote")}&rdquo;
                 </p>
-                <cite className="mt-2 block text-sm text-[#1E3A5F]/60 not-italic">
+                <cite className="mt-1.5 block text-sm text-[#1E3A5F]/60 not-italic">
                   {t("about.quoteAttribution")}
                 </cite>
               </blockquote>
             </AnimateOnScroll>
 
-            {/* Credentials grid */}
-            <AnimateOnScroll
-              animation="fade-up"
-              mobileAnimation="fade-in"
-              delay={300}
-              duration={500}
-              easing="smooth"
-            >
-              <div className="mb-8 grid gap-4 sm:grid-cols-2">
-                {/* Education */}
-                <div className="rounded-xl border border-[#38BDF8]/20 bg-[#F5F5F5] p-4">
-                  <div className="mb-2 flex items-center gap-2 text-[#38BDF8]">
-                    <GraduationCap className="h-4 w-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">
-                      {education.title}
-                    </span>
+            {/* Credentials 2x2 grid - compact */}
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
+              {/* Education */}
+              <AnimateOnScroll
+                animation="scale-up"
+                mobileAnimation="fade-in"
+                staggerIndex={0}
+                staggerDelay={50}
+                duration={400}
+                easing="spring"
+              >
+                <div className="group rounded-[18px] border border-[#38BDF8]/15 bg-[#F9FAFB] p-4 transition-all duration-300 hover:border-[#38BDF8]/40 hover:shadow-md lg:p-5">
+                  <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-colors duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
+                    <GraduationCap className="h-4 w-4" strokeWidth={1.8} />
                   </div>
-                  <p className="text-sm font-medium text-[#1E3A5F]">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-[#38BDF8]">
+                    {education.title}
+                  </p>
+                  <p className="mt-1 text-[14px] font-semibold leading-tight text-[#1E3A5F]">
                     {education.degree}
                   </p>
-                  <p className="text-xs text-[#1E3A5F]/60">
+                  <p className="text-[12px] text-[#1E3A5F]/60 line-clamp-2">
                     {education.university}
                   </p>
-                  <p className="text-xs text-[#1E3A5F]/50">
-                    {education.period}
-                  </p>
                 </div>
+              </AnimateOnScroll>
 
-                {/* Specialty */}
-                <div className="rounded-xl border border-[#38BDF8]/20 bg-[#F5F5F5] p-4">
-                  <div className="mb-2 flex items-center gap-2 text-[#38BDF8]">
-                    <Award className="h-4 w-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">
-                      {specialty.title}
-                    </span>
+              {/* Specialty */}
+              <AnimateOnScroll
+                animation="scale-up"
+                mobileAnimation="fade-in"
+                staggerIndex={1}
+                staggerDelay={50}
+                duration={400}
+                easing="spring"
+              >
+                <div className="group rounded-[18px] border border-[#38BDF8]/15 bg-[#F9FAFB] p-4 transition-all duration-300 hover:border-[#38BDF8]/40 hover:shadow-md lg:p-5">
+                  <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-colors duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
+                    <Award className="h-4 w-4" strokeWidth={1.8} />
                   </div>
-                  {specialty.items.map((item, index) => (
-                    <p key={index} className="text-sm text-[#1E3A5F]/70">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-[#38BDF8]">
+                    {specialty.title}
+                  </p>
+                  {specialty.items.slice(0, 2).map((item, index) => (
+                    <p key={index} className="mt-1 text-[13px] leading-snug text-[#1E3A5F]/70 line-clamp-1">
                       • {item}
                     </p>
                   ))}
                 </div>
+              </AnimateOnScroll>
 
-                {/* Languages */}
-                <div className="rounded-xl border border-[#38BDF8]/20 bg-[#F5F5F5] p-4">
-                  <div className="mb-2 flex items-center gap-2 text-[#38BDF8]">
-                    <Languages className="h-4 w-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">
-                      Idiomas
-                    </span>
+              {/* Languages */}
+              <AnimateOnScroll
+                animation="scale-up"
+                mobileAnimation="fade-in"
+                staggerIndex={2}
+                staggerDelay={50}
+                duration={400}
+                easing="spring"
+              >
+                <div className="group rounded-[18px] border border-[#38BDF8]/15 bg-[#F9FAFB] p-4 transition-all duration-300 hover:border-[#38BDF8]/40 hover:shadow-md lg:p-5">
+                  <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] transition-colors duration-300 group-hover:bg-[#38BDF8] group-hover:text-white">
+                    <Languages className="h-4 w-4" strokeWidth={1.8} />
                   </div>
-                  <p className="text-sm text-[#1E3A5F]/70">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-[#38BDF8]">
+                    {t("about.languagesLabel")}
+                  </p>
+                  <p className="mt-1 text-[14px] font-semibold leading-tight text-[#1E3A5F]">
                     {languages.join(" • ")}
                   </p>
                 </div>
+              </AnimateOnScroll>
 
-                {/* College - mobile */}
-                <div className="rounded-xl border border-[#38BDF8]/20 bg-[#F5F5F5] p-4 md:hidden">
-                  <div className="mb-2 flex items-center gap-2 text-[#38BDF8]">
-                    <Building2 className="h-4 w-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">
-                      Colegiatura
-                    </span>
-                  </div>
-                  <p className="text-sm font-medium text-[#1E3A5F]">
+              {/* College - mobile only */}
+              <AnimateOnScroll
+                animation="scale-up"
+                mobileAnimation="fade-in"
+                staggerIndex={3}
+                staggerDelay={50}
+                duration={400}
+                easing="spring"
+                className="md:hidden"
+              >
+                <div className="group rounded-[18px] border border-[#38BDF8]/15 bg-[#F9FAFB] p-4 transition-all duration-300 hover:border-[#38BDF8]/40 hover:shadow-md">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-[#38BDF8]">
+                    {t("about.collegeLabel")}
+                  </p>
+                  <p className="mt-1 text-[14px] font-semibold leading-tight text-[#1E3A5F]">
                     {college.code}
                   </p>
-                  <p className="text-xs text-[#1E3A5F]/60">
+                  <p className="text-[12px] text-[#1E3A5F]/60">
                     {college.type} • {college.status}
                   </p>
                 </div>
-              </div>
-            </AnimateOnScroll>
+              </AnimateOnScroll>
+            </div>
 
-            {/* CTA */}
+            {/* CTA below credentials grid */}
             <AnimateOnScroll
               animation="fade-up"
               mobileAnimation="fade-up"
-              delay={400}
+              delay={150}
               duration={500}
               easing="smooth"
             >
-              <ButtonGroup className="flex flex-col items-center text-center">
-                <p className="mb-6 text-base font-medium text-[#1E3A5F]/80">
+              <ButtonGroup className="mt-5 flex flex-col items-center text-center sm:mt-6 lg:items-start lg:text-left">
+                <p className="mb-4 text-sm font-medium text-[#1E3A5F]/70">
                   {t("about.ctaPreText")}
                 </p>
                 <a
@@ -241,7 +266,9 @@ export function About() {
                     {t("about.cta")}
                   </Button>
                 </a>
-                <ButtonMicrocopy>{t("about.ctaMicrocopy")}</ButtonMicrocopy>
+                <ButtonMicrocopy className="lg:text-left">
+                  {t("about.ctaMicrocopy")}
+                </ButtonMicrocopy>
               </ButtonGroup>
             </AnimateOnScroll>
           </div>
