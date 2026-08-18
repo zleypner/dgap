@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import { useScrollHeader } from "@/hooks";
@@ -52,10 +53,14 @@ export function Header() {
               className="flex items-center gap-3"
               onClick={handleNavClick}
             >
-              {/* Circular E Logo */}
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1E3A5F] text-xl font-bold text-white">
-                E
-              </div>
+              <Image
+                src="/images/icons/logo.jpeg"
+                alt="Dra. Eimy Pinto Logo"
+                width={48}
+                height={48}
+                className="h-12 w-12 rounded-full object-cover"
+                priority
+              />
               <div className="hidden sm:block">
                 <p className="text-lg leading-tight font-semibold text-[#1E3A5F]">
                   Dra. Eimy Pinto

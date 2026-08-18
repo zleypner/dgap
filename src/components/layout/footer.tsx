@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import { Icons, Container } from "@/components/ui";
@@ -16,9 +17,13 @@ export function Footer() {
           {/* Logo and description */}
           <div>
               <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1E3A5F] font-bold text-white">
-                  E
-                </div>
+                <Image
+                  src="/images/icons/logo.jpeg"
+                  alt="Dra. Eimy Pinto Logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 rounded-full object-cover"
+                />
                 <span className="font-semibold text-[#1E3A5F]">
                   Dra. Eimy Pinto
                 </span>
