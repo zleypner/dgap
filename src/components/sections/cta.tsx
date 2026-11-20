@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { siteConfig } from "@/config/site";
 import {
   Section,
   Container,
@@ -12,6 +11,7 @@ import {
   ButtonMicrocopy,
   ButtonGroup,
 } from "@/components/ui";
+import { getWhatsAppLink } from "@/lib/utils";
 
 export function CTA() {
   const { t } = useTranslation();
@@ -57,7 +57,7 @@ export function CTA() {
               <ButtonGroup className="flex flex-col items-center">
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <a
-                    href={siteConfig.contact.whatsappLink}
+                    href={getWhatsAppLink("general")}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

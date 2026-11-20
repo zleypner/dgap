@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "@/config/site";
 import { Icons, Container } from "@/components/ui";
+import { getWhatsAppLink } from "@/lib/utils";
 import { Clock, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
@@ -74,7 +75,7 @@ export function Footer() {
 
                 {/* WhatsApp Button */}
                 <a
-                  href={siteConfig.contact.whatsappLink}
+                  href={getWhatsAppLink("general")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-12 items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 text-[15px] font-semibold text-white transition-all duration-200 hover:bg-[#20BD5A] hover:shadow-lg active:scale-[0.98]"

@@ -80,47 +80,112 @@ export const content = {
     // Rehabilitación Cardiopulmonar
     rehabilitation: {
       badge: "Rehabilitación Cardiopulmonar en Costa Rica",
-      title: "Recuperar capacidad también es recuperar confianza.",
+      title: "Recuperá tu confianza. Fortalecé tu corazón. Mejorá tu calidad de vida.",
       subtitle:
-        "Después de una condición cardiovascular o pulmonar, actividades que antes parecían sencillas pueden representar un desafío.",
+        "Programa de rehabilitación cardiopulmonar supervisado, diseñado para ayudar a personas con enfermedades cardíacas o pulmonares a recuperar su capacidad física mediante ejercicio adaptado y monitoreo profesional.",
       intro:
-        "La rehabilitación cardiopulmonar es un proceso médico supervisado orientado a mejorar progresivamente la capacidad funcional, la tolerancia al esfuerzo y la seguridad al realizar actividad física. El objetivo es avanzar de acuerdo con tu condición clínica y ayudarte a retomar, de manera progresiva, las actividades que forman parte de tu vida.",
+        "Es un programa médico supervisado que combina ejercicio aeróbico y de fuerza muscular para mejorar la capacidad cardiovascular y funcional.",
+      programDetails: {
+        title: "¿En qué consiste el programa?",
+        items: [
+          "36 sesiones de rehabilitación",
+          "Sesiones de aproximadamente 30 a 60 minutos",
+          "Frecuencia de 2 a 3 veces por semana",
+          "Ejercicio personalizado según la valoración inicial",
+          "Monitoreo de frecuencia cardíaca, presión arterial, saturación de oxígeno y ritmo cardíaco mediante telemetría",
+          "Seguimiento de la evolución física",
+        ],
+      },
+      indications: {
+        title: "¿Para quién está indicado?",
+        subtitle: "Personas que, según valoración médica:",
+        items: [
+          "Han sufrido un infarto",
+          "Han recibido una angioplastia coronaria o cateterismo",
+          "Se recuperan de una cirugía cardíaca",
+          "Presentan insuficiencia cardíaca estable",
+          "Tienen determinadas enfermedades cardiovasculares",
+          "Presentan enfermedades respiratorias crónicas",
+          "Necesitan recuperar su capacidad física después de un evento cardiovascular",
+        ],
+      },
       benefits: [
         {
-          title: "Evaluación",
-          description:
-            "Conocer tu condición actual permite establecer un punto de partida adecuado.",
+          title: "Mejorar resistencia",
+          description: "Mejorar la resistencia y capacidad física general.",
         },
         {
-          title: "Recuperación progresiva",
-          description:
-            "El proceso se adapta a tu evolución y capacidad funcional.",
+          title: "Fortalecer músculos",
+          description: "Fortalecer los músculos y mejorar la condición cardiovascular.",
         },
         {
-          title: "Movimiento con mayor seguridad",
-          description:
-            "Trabajamos para mejorar la tolerancia al esfuerzo y recuperar confianza al realizar actividad física.",
+          title: "Control de factores",
+          description: "Contribuir al control de factores de riesgo cardiovascular.",
         },
         {
-          title: "Seguimiento",
-          description:
-            "La evolución se valora durante el proceso para realizar los ajustes que sean necesarios.",
+          title: "Reducir fatiga",
+          description: "Disminuir la fatiga y mejorar la tolerancia al esfuerzo.",
+        },
+        {
+          title: "Bienestar emocional",
+          description: "Favorecer el bienestar emocional y la confianza.",
+        },
+        {
+          title: "Prevenir complicaciones",
+          description: "Contribuir a reducir el riesgo de nuevas hospitalizaciones y complicaciones cardiovasculares.",
         },
       ],
+      benefitsNote: "Los resultados dependen de la condición individual y del seguimiento médico.",
+      process: {
+        title: "El proceso",
+        steps: [
+          { number: "1", title: "Valoración médica inicial", description: "Evaluación completa de tu condición actual" },
+          { number: "2", title: "Programa personalizado", description: "Diseño de ejercicios adaptados a tus necesidades" },
+          { number: "3", title: "Sesiones supervisadas", description: "Entrenamiento con monitoreo continuo" },
+          { number: "4", title: "Evaluación de avances", description: "Seguimiento y recomendaciones de continuidad" },
+        ],
+      },
       ctaPreText: "Volver a hacer lo que disfrutás también forma parte de recuperarte.",
-      cta: "Consultar sobre rehabilitación",
-      ctaMicrocopy:
-        "Evaluación inicial • Proceso progresivo • Seguimiento médico",
+      cta: "Quiero información sobre rehabilitación",
+      ctaMicrocopy: "Evaluación inicial • Proceso progresivo • Seguimiento médico",
     },
 
-    // Salud Cardiometabólica
+    // Salud Cardiometabólica / Medicina General
     cardiometabolic: {
-      badge: "Salud Cardiometabólica en Costa Rica",
-      title: "Prevenir comienza por conocer tu riesgo.",
+      badge: "Medicina General y Prevención Cardiometabólica",
+      title: "Cuidar tu corazón comienza antes de que aparezcan los síntomas.",
       subtitle:
-        "La salud cardiovascular está relacionada con múltiples factores: presión arterial, metabolismo, composición corporal, actividad física, antecedentes y hábitos de vida.",
+        "Consulta de medicina general enfocada en la prevención, detección temprana y control de factores de riesgo relacionados con hipertensión, diabetes, obesidad y alteraciones del colesterol y triglicéridos.",
       intro:
-        "Una valoración cardiometabólica permite analizar estos elementos de manera conjunta, identificar factores de riesgo y establecer medidas de prevención o seguimiento según cada caso. La Dra. Eimy Pinto cuenta con formación en Prevención de Riesgo Cardiometabólico y brinda valoración enfocada en la prevención y control de factores asociados a enfermedad cardiovascular.",
+        "La Dra. Eimy Pinto cuenta con formación en Prevención de Riesgo Cardiometabólico (Universidad de Santander - UDES y Academia Latinoamericana de Lipidología y Riesgo Cardiovascular - ALALIP, Colombia) y brinda valoración enfocada en la prevención y control de factores asociados a enfermedad cardiovascular.",
+      consultationIncludes: {
+        title: "¿Qué incluye la consulta?",
+        items: [
+          "Historia clínica y examen físico",
+          "Medición de presión arterial y signos vitales",
+          "Electrocardiograma de 12 derivaciones",
+          "Medición de peso y análisis de composición corporal",
+          "Evaluación de factores de riesgo cardiovascular y metabólico",
+          "Revisión de resultados de laboratorio cuando corresponda",
+          "Recomendaciones individualizadas",
+          "Plan de seguimiento según las necesidades del paciente",
+        ],
+      },
+      targetAudience: {
+        title: "¿Para quién es esta consulta?",
+        subtitle: "Personas que:",
+        items: [
+          "Tienen presión arterial elevada",
+          "Presentan prediabetes o diabetes",
+          "Tienen sobrepeso u obesidad",
+          "Presentan colesterol o triglicéridos elevados",
+          "Llevan una vida sedentaria",
+          "Tienen antecedentes familiares cardiovasculares",
+          "Fuman o presentan otros factores de riesgo",
+          "Desean prevenir enfermedades incluso sin tener síntomas",
+        ],
+      },
+      keyMessage: "No necesitás sentirte mal para comenzar a cuidar tu salud.",
       process: {
         title: "El enfoque:",
         steps: ["Evaluar", "Comprender", "Prevenir", "Dar seguimiento"],
@@ -132,12 +197,10 @@ export const content = {
         "Seguimiento según evolución",
         "Prevención de riesgo cardiovascular",
       ],
-      credential:
-        "Diplomado en Prevención de Riesgo Cardiometabólico",
+      credential: "Diplomado en Prevención de Riesgo Cardiometabólico (UDES - ALALIP, Colombia)",
       ctaPreText: "Porque muchas veces cuidar el corazón comienza antes de que aparezcan síntomas.",
-      cta: "Agendar valoración",
-      ctaMicrocopy:
-        "Evaluación integral • Prevención • Seguimiento",
+      cta: "Quiero conocer mis factores de riesgo",
+      ctaMicrocopy: "Evaluación integral • Prevención • Seguimiento",
     },
 
     // Cardiología No Invasiva
@@ -354,50 +417,121 @@ export const content = {
     faq: {
       badge: "Preguntas Frecuentes",
       title: "Respuestas a dudas comunes",
-      subtitle:
-        "Si tenés más preguntas, podés escribirme directamente.",
-      items: [
-        {
-          question: "¿Qué es la rehabilitación cardiopulmonar y para qué sirve?",
-          answer:
-            "La rehabilitación cardiopulmonar es un programa médico supervisado que ayuda a personas con condiciones cardiovasculares o pulmonares a recuperar su capacidad física, mejorar su calidad de vida y retomar sus actividades con mayor seguridad. Incluye evaluación inicial, ejercicio progresivo y seguimiento médico.",
-        },
-        {
-          question: "¿Qué es una valoración cardiometabólica?",
-          answer:
-            "Es una evaluación integral que identifica factores de riesgo cardiovascular y metabólico como presión arterial elevada, alteraciones en el metabolismo, sobrepeso o sedentarismo. Incluye análisis de composición corporal y permite establecer un plan de prevención según cada caso.",
-        },
-        {
-          question: "¿Cuál es la diferencia entre un electrocardiograma, Holter y MAPA?",
-          answer:
-            "El electrocardiograma (ECG) registra la actividad eléctrica del corazón en un momento específico. El Holter monitorea el ritmo cardíaco de forma continua durante un período determinado. El MAPA (Monitoreo Ambulatorio de Presión Arterial) mide la presión arterial automáticamente durante 24 horas para evaluar su comportamiento a lo largo del día.",
-        },
-        {
-          question: "¿Durante cuánto tiempo se utiliza un Holter?",
-          answer:
-            "El Holter puede utilizarse durante diferentes períodos según lo que se necesite evaluar. Un monitoreo más prolongado permite detectar eventos cardíacos que pueden no presentarse en estudios de corta duración.",
-        },
-        {
-          question: "¿Qué es el MAPA de presión arterial?",
-          answer:
-            "El MAPA es el Monitoreo Ambulatorio de Presión Arterial. Es un estudio de 24 horas que mide la presión arterial automáticamente mientras realizás tus actividades normales, permitiendo evaluar variaciones diurnas y nocturnas que no se detectan en una medición puntual.",
-        },
-        {
-          question: "¿Dónde atiende la Dra. Eimy Pinto?",
-          answer:
-            "La Dra. Eimy Pinto atiende en Hospital Internacional La Católica, ubicado en Goicoechea, San José, Costa Rica. El consultorio está en Torre Médica, Piso 5, Consultorios 501/502, en San Antonio de Guadalupe. También ofrece consultas a domicilio y videoconsulta.",
-        },
-        {
-          question: "¿Puedo solicitar una consulta a domicilio?",
-          answer:
-            "Sí, se ofrecen consultas médicas a domicilio y también ecocardiograma a domicilio para pacientes que lo requieran.",
-        },
-        {
-          question: "¿Cómo puedo agendar una cita?",
-          answer:
-            "Podés agendar tu cita por WhatsApp o llamar directamente. Te responderé lo antes posible para coordinar tu cita en Hospital La Católica.",
-        },
-      ],
+      subtitle: "Si tenés más preguntas, podés escribirme directamente.",
+      // Sección de Rehabilitación Cardiopulmonar
+      rehabilitationSection: {
+        title: "Rehabilitación Cardiopulmonar",
+        items: [
+          {
+            question: "¿Qué es la rehabilitación cardiopulmonar?",
+            answer: "Es un programa médico supervisado que combina ejercicio aeróbico y de fuerza muscular para mejorar la capacidad cardiovascular y funcional. Está diseñado para ayudar a personas con enfermedades cardíacas o pulmonares a recuperar su capacidad física mediante ejercicio adaptado y monitoreo profesional.",
+          },
+          {
+            question: "¿Quiénes pueden beneficiarse de la rehabilitación cardiopulmonar?",
+            answer: "Personas que han sufrido un infarto, han recibido una angioplastia coronaria o cateterismo, se recuperan de una cirugía cardíaca, presentan insuficiencia cardíaca estable, tienen determinadas enfermedades cardiovasculares, presentan enfermedades respiratorias crónicas, o necesitan recuperar su capacidad física después de un evento cardiovascular. La indicación depende siempre de una valoración médica previa.",
+          },
+          {
+            question: "¿Cuáles son los beneficios de la rehabilitación cardiopulmonar?",
+            answer: "Entre los beneficios potenciales se encuentran: mejorar la resistencia y capacidad física, fortalecer los músculos y mejorar la condición cardiovascular, contribuir al control de factores de riesgo, disminuir la fatiga y mejorar la tolerancia al esfuerzo, favorecer el bienestar emocional, y contribuir a reducir el riesgo de nuevas hospitalizaciones y complicaciones cardiovasculares. Los resultados dependen de la condición individual y del seguimiento médico.",
+          },
+          {
+            question: "¿Es seguro realizar ejercicio después de un infarto?",
+            answer: "Sí, cuando se realiza bajo supervisión médica adecuada. El programa de rehabilitación cardiopulmonar está diseñado precisamente para que personas que han sufrido un evento cardiovascular puedan realizar ejercicio de forma segura, con monitoreo continuo de frecuencia cardíaca, presión arterial, saturación de oxígeno y ritmo cardíaco. La seguridad y el momento de inicio dependen de la valoración médica individual.",
+          },
+          {
+            question: "¿Cuánto dura el programa de rehabilitación?",
+            answer: "El programa incluye 36 sesiones de rehabilitación, con sesiones de aproximadamente 30 a 60 minutos y una frecuencia de 2 a 3 veces por semana. La duración total depende del progreso individual y de las necesidades de cada paciente.",
+          },
+          {
+            question: "¿Qué tipo de ejercicios se realizan en rehabilitación?",
+            answer: "El programa combina ejercicio aeróbico (como caminata, bicicleta estática) y ejercicio de fuerza muscular, todo personalizado según la valoración inicial. Los ejercicios se adaptan a la capacidad y evolución de cada paciente.",
+          },
+          {
+            question: "¿Necesito una valoración médica antes de comenzar?",
+            answer: "Sí, es necesaria una valoración médica inicial para evaluar tu condición actual, establecer un punto de partida adecuado y diseñar un programa de ejercicio personalizado según tus necesidades y capacidades.",
+          },
+          {
+            question: "¿Puedo participar si tengo insuficiencia cardíaca?",
+            answer: "Sí, la rehabilitación cardiopulmonar está indicada para personas con insuficiencia cardíaca estable. La participación depende de una valoración médica que determine si es el momento adecuado para iniciar el programa.",
+          },
+          {
+            question: "¿Durante las sesiones se monitorea el corazón?",
+            answer: "Sí, durante todas las sesiones se realiza monitoreo continuo de frecuencia cardíaca, presión arterial, saturación de oxígeno y ritmo cardíaco mediante telemetría. Esto permite realizar el ejercicio de forma segura y detectar cualquier alteración de manera oportuna.",
+          },
+          {
+            question: "¿Necesito estar en buena condición física para participar?",
+            answer: "No. El programa está diseñado precisamente para personas que necesitan recuperar su capacidad física. Los ejercicios se adaptan a tu condición actual y progresan de manera gradual según tu evolución.",
+          },
+          {
+            question: "¿La rehabilitación ayuda a prevenir otro infarto?",
+            answer: "La rehabilitación cardiopulmonar contribuye al control de factores de riesgo cardiovascular y puede ayudar a reducir el riesgo de nuevas hospitalizaciones y complicaciones cardiovasculares. Es parte de un enfoque integral que incluye también cambios en estilo de vida y seguimiento médico.",
+          },
+          {
+            question: "¿Qué sucede cuando termino el programa de rehabilitación?",
+            answer: "Al finalizar el programa se realiza una evaluación de los avances logrados y se brindan recomendaciones de continuidad para mantener los beneficios obtenidos. El objetivo es que puedas continuar con un estilo de vida activo de forma segura e independiente.",
+          },
+          {
+            question: "¿Puedo participar si soy adulto mayor?",
+            answer: "Sí, la rehabilitación cardiopulmonar puede beneficiar a adultos mayores. El programa se adapta a las capacidades y necesidades específicas de cada persona, independientemente de la edad. La participación depende de la valoración médica individual.",
+          },
+          {
+            question: "¿Cuándo puedo comenzar después de una cirugía cardíaca o infarto?",
+            answer: "El momento de inicio depende de la valoración médica individual. Generalmente, la rehabilitación puede comenzar una vez que el paciente se encuentra estable y ha sido autorizado por su médico tratante. Cada caso es diferente y requiere una evaluación personalizada.",
+          },
+          {
+            question: "¿Por qué elegir un programa supervisado de rehabilitación?",
+            answer: "Un programa supervisado ofrece monitoreo profesional continuo, ejercicios adaptados a tu condición específica, seguimiento de tu evolución, y la seguridad de tener atención médica disponible durante las sesiones. Esto es especialmente importante para personas con condiciones cardiovasculares o pulmonares.",
+          },
+        ],
+        cta: "Consultar sobre rehabilitación",
+      },
+      // Sección de Medicina General y Prevención Cardiometabólica
+      cardiometabolicSection: {
+        title: "Medicina General y Prevención Cardiometabólica",
+        items: [
+          {
+            question: "¿Qué es una consulta con enfoque en prevención cardiometabólica?",
+            answer: "Es una consulta de medicina general enfocada en la prevención, detección temprana y control de factores de riesgo relacionados con hipertensión, diabetes, obesidad y alteraciones del colesterol y triglicéridos. El objetivo es identificar factores de riesgo antes de que aparezcan síntomas o complicaciones.",
+          },
+          {
+            question: "¿Qué incluye la consulta de medicina general?",
+            answer: "La consulta incluye historia clínica y examen físico, medición de presión arterial y signos vitales, electrocardiograma de 12 derivaciones, medición de peso y análisis de composición corporal, evaluación de factores de riesgo cardiovascular y metabólico, revisión de resultados de laboratorio cuando corresponda, recomendaciones individualizadas, y plan de seguimiento según las necesidades del paciente.",
+          },
+          {
+            question: "¿Qué es el análisis de composición corporal?",
+            answer: "Es una medición que permite conocer la proporción de masa muscular, grasa corporal y otros componentes del cuerpo. Esta información es útil para evaluar el estado nutricional y metabólico, y para establecer metas de salud más precisas que solo el peso en la báscula.",
+          },
+          {
+            question: "¿Por qué se realiza un electrocardiograma en la consulta?",
+            answer: "El electrocardiograma de 12 derivaciones permite evaluar la actividad eléctrica del corazón y detectar posibles alteraciones del ritmo cardíaco u otros hallazgos que pueden requerir atención. Es un estudio no invasivo que aporta información valiosa sobre la salud cardiovascular.",
+          },
+          {
+            question: "¿Quién debería evaluar su riesgo cardiometabólico?",
+            answer: "Personas que tienen presión arterial elevada, presentan prediabetes o diabetes, tienen sobrepeso u obesidad, presentan colesterol o triglicéridos elevados, llevan una vida sedentaria, tienen antecedentes familiares cardiovasculares, fuman o presentan otros factores de riesgo, o simplemente desean prevenir enfermedades incluso sin tener síntomas.",
+          },
+          {
+            question: "¿Necesito tener alguna enfermedad para consultar?",
+            answer: "No. No necesitás sentirte mal para comenzar a cuidar tu salud. La consulta de prevención cardiometabólica está diseñada tanto para personas con factores de riesgo conocidos como para quienes desean evaluar su estado de salud de forma preventiva.",
+          },
+          {
+            question: "¿Se brinda seguimiento para hipertensión, diabetes o colesterol elevado?",
+            answer: "Sí. La consulta incluye un plan de seguimiento según las necesidades de cada paciente. Se ofrece acompañamiento para el control de hipertensión arterial, diabetes, alteraciones del colesterol y triglicéridos, y otros factores de riesgo metabólico.",
+          },
+          {
+            question: "¿La consulta incluye recomendaciones de alimentación y control de peso?",
+            answer: "Sí. Se brindan recomendaciones individualizadas sobre estilos de vida saludable, que pueden incluir orientación sobre alimentación, actividad física y control de peso. Dependiendo de cada caso, se puede coordinar con otros profesionales de la salud.",
+          },
+          {
+            question: "¿Dónde se encuentra el consultorio?",
+            answer: "El consultorio se encuentra en Hospital Internacional La Católica, Torre Médica, quinto piso, consultorio 501, Guadalupe, San José, Costa Rica. También se ofrece consulta a domicilio y videoconsulta para quienes lo requieran.",
+          },
+          {
+            question: "¿Quién realiza la consulta médica?",
+            answer: "La consulta es realizada por la Dra. Eimy Stephany Pinto Arita, Médico y Cirujano con Diplomado en Prevención del Riesgo Cardiometabólico por la Universidad de Santander (UDES) y la Academia Latinoamericana de Lipidología y Riesgo Cardiovascular (ALALIP) de Colombia.",
+          },
+        ],
+        cta: "Agendar valoración médica",
+      },
       cta: "Escribime por WhatsApp",
     },
 
@@ -532,47 +666,112 @@ export const content = {
     // Cardiopulmonary Rehabilitation
     rehabilitation: {
       badge: "Cardiopulmonary Rehabilitation in Costa Rica",
-      title: "Recovering capacity also means regaining confidence.",
+      title: "Regain your confidence. Strengthen your heart. Improve your quality of life.",
       subtitle:
-        "After a cardiovascular or pulmonary condition, activities that once seemed simple can become challenging.",
+        "Supervised cardiopulmonary rehabilitation program designed to help people with heart or lung diseases recover their physical capacity through adapted exercise and professional monitoring.",
       intro:
-        "Cardiopulmonary rehabilitation is a supervised medical process aimed at progressively improving functional capacity, exercise tolerance, and safety when performing physical activity. The goal is to progress according to your clinical condition and help you gradually resume the activities that are part of your life.",
+        "It is a supervised medical program that combines aerobic and muscle strengthening exercises to improve cardiovascular and functional capacity.",
+      programDetails: {
+        title: "What does the program include?",
+        items: [
+          "36 rehabilitation sessions",
+          "Sessions of approximately 30 to 60 minutes",
+          "Frequency of 2 to 3 times per week",
+          "Personalized exercise based on initial assessment",
+          "Monitoring of heart rate, blood pressure, oxygen saturation, and heart rhythm through telemetry",
+          "Physical progress tracking",
+        ],
+      },
+      indications: {
+        title: "Who is it indicated for?",
+        subtitle: "People who, according to medical evaluation:",
+        items: [
+          "Have suffered a heart attack",
+          "Have received coronary angioplasty or catheterization",
+          "Are recovering from cardiac surgery",
+          "Have stable heart failure",
+          "Have certain cardiovascular diseases",
+          "Have chronic respiratory diseases",
+          "Need to recover physical capacity after a cardiovascular event",
+        ],
+      },
       benefits: [
         {
-          title: "Evaluation",
-          description:
-            "Understanding your current condition allows establishing an appropriate starting point.",
+          title: "Improve endurance",
+          description: "Improve overall endurance and physical capacity.",
         },
         {
-          title: "Progressive recovery",
-          description:
-            "The process adapts to your evolution and functional capacity.",
+          title: "Strengthen muscles",
+          description: "Strengthen muscles and improve cardiovascular condition.",
         },
         {
-          title: "Safer movement",
-          description:
-            "We work to improve exercise tolerance and regain confidence when performing physical activity.",
+          title: "Risk factor control",
+          description: "Contribute to cardiovascular risk factor control.",
         },
         {
-          title: "Follow-up",
-          description:
-            "Progress is assessed during the process to make necessary adjustments.",
+          title: "Reduce fatigue",
+          description: "Decrease fatigue and improve exercise tolerance.",
+        },
+        {
+          title: "Emotional wellbeing",
+          description: "Promote emotional wellbeing and confidence.",
+        },
+        {
+          title: "Prevent complications",
+          description: "Help reduce the risk of new hospitalizations and cardiovascular complications.",
         },
       ],
+      benefitsNote: "Results depend on individual condition and medical follow-up.",
+      process: {
+        title: "The process",
+        steps: [
+          { number: "1", title: "Initial medical assessment", description: "Complete evaluation of your current condition" },
+          { number: "2", title: "Personalized program", description: "Exercise design adapted to your needs" },
+          { number: "3", title: "Supervised sessions", description: "Training with continuous monitoring" },
+          { number: "4", title: "Progress evaluation", description: "Follow-up and continuity recommendations" },
+        ],
+      },
       ctaPreText: "Getting back to what you enjoy is also part of recovery.",
-      cta: "Inquire about rehabilitation",
-      ctaMicrocopy:
-        "Initial evaluation • Progressive process • Medical follow-up",
+      cta: "I want information about rehabilitation",
+      ctaMicrocopy: "Initial evaluation • Progressive process • Medical follow-up",
     },
 
-    // Cardiometabolic Health
+    // Cardiometabolic Health / General Medicine
     cardiometabolic: {
-      badge: "Cardiometabolic Health in Costa Rica",
-      title: "Prevention starts with knowing your risk.",
+      badge: "General Medicine and Cardiometabolic Prevention",
+      title: "Caring for your heart begins before symptoms appear.",
       subtitle:
-        "Cardiovascular health is related to multiple factors: blood pressure, metabolism, body composition, physical activity, history, and lifestyle habits.",
+        "General medicine consultation focused on prevention, early detection, and control of risk factors related to hypertension, diabetes, obesity, and cholesterol and triglyceride alterations.",
       intro:
-        "A cardiometabolic assessment allows analyzing these elements together, identifying risk factors, and establishing prevention or follow-up measures for each case. Dr. Eimy Pinto has training in Cardiometabolic Risk Prevention and provides assessment focused on the prevention and control of factors associated with cardiovascular disease.",
+        "Dr. Eimy Pinto has training in Cardiometabolic Risk Prevention (Universidad de Santander - UDES and Latin American Academy of Lipidology and Cardiovascular Risk - ALALIP, Colombia) and provides assessment focused on the prevention and control of factors associated with cardiovascular disease.",
+      consultationIncludes: {
+        title: "What does the consultation include?",
+        items: [
+          "Medical history and physical examination",
+          "Blood pressure and vital signs measurement",
+          "12-lead electrocardiogram",
+          "Weight measurement and body composition analysis",
+          "Cardiovascular and metabolic risk factor assessment",
+          "Review of laboratory results when applicable",
+          "Individualized recommendations",
+          "Follow-up plan according to patient needs",
+        ],
+      },
+      targetAudience: {
+        title: "Who is this consultation for?",
+        subtitle: "People who:",
+        items: [
+          "Have elevated blood pressure",
+          "Have prediabetes or diabetes",
+          "Are overweight or obese",
+          "Have elevated cholesterol or triglycerides",
+          "Lead a sedentary lifestyle",
+          "Have family history of cardiovascular disease",
+          "Smoke or have other risk factors",
+          "Want to prevent diseases even without symptoms",
+        ],
+      },
+      keyMessage: "You don't need to feel sick to start taking care of your health.",
       process: {
         title: "The approach:",
         steps: ["Evaluate", "Understand", "Prevent", "Follow up"],
@@ -584,11 +783,10 @@ export const content = {
         "Follow-up according to evolution",
         "Cardiovascular risk prevention",
       ],
-      credential: "Diploma in Cardiometabolic Risk Prevention",
+      credential: "Diploma in Cardiometabolic Risk Prevention (UDES - ALALIP, Colombia)",
       ctaPreText: "Because often caring for your heart begins before symptoms appear.",
-      cta: "Schedule assessment",
-      ctaMicrocopy:
-        "Comprehensive evaluation • Prevention • Follow-up",
+      cta: "I want to know my risk factors",
+      ctaMicrocopy: "Comprehensive evaluation • Prevention • Follow-up",
     },
 
     // Non-Invasive Cardiology
@@ -806,48 +1004,120 @@ export const content = {
       badge: "Frequently Asked Questions",
       title: "Answers to common questions",
       subtitle: "If you have more questions, you can contact me directly.",
-      items: [
-        {
-          question: "What is cardiopulmonary rehabilitation and what is it for?",
-          answer:
-            "Cardiopulmonary rehabilitation is a supervised medical program that helps people with cardiovascular or pulmonary conditions recover their physical capacity, improve their quality of life, and resume their activities more safely. It includes initial evaluation, progressive exercise, and medical follow-up.",
-        },
-        {
-          question: "What is a cardiometabolic assessment?",
-          answer:
-            "It is a comprehensive evaluation that identifies cardiovascular and metabolic risk factors such as elevated blood pressure, metabolic alterations, overweight, or sedentary lifestyle. It includes body composition analysis and allows establishing a prevention plan for each case.",
-        },
-        {
-          question: "What's the difference between an electrocardiogram, Holter, and ABPM?",
-          answer:
-            "The electrocardiogram (ECG) records the heart's electrical activity at a specific moment. The Holter monitors heart rhythm continuously over a determined period. ABPM (Ambulatory Blood Pressure Monitoring) measures blood pressure automatically for 24 hours to evaluate its behavior throughout the day.",
-        },
-        {
-          question: "How long is a Holter monitor used?",
-          answer:
-            "The Holter can be used for different periods depending on what needs to be evaluated. Longer monitoring allows detecting cardiac events that may not occur in short-duration studies.",
-        },
-        {
-          question: "What is blood pressure ABPM?",
-          answer:
-            "ABPM is Ambulatory Blood Pressure Monitoring. It's a 24-hour study that measures your blood pressure automatically while you perform your normal activities, allowing evaluation of daytime and nighttime variations not detected in a single measurement.",
-        },
-        {
-          question: "Where does Dr. Eimy Pinto practice?",
-          answer:
-            "Dr. Eimy Pinto practices at Hospital Internacional La Católica, located in Goicoechea, San José, Costa Rica. The office is in Torre Médica, Floor 5, Offices 501/502, in San Antonio de Guadalupe. She also offers home consultations and video consultations.",
-        },
-        {
-          question: "Can I request a home consultation?",
-          answer:
-            "Yes, home medical consultations and home echocardiograms are offered for patients who require them.",
-        },
-        {
-          question: "How can I schedule an appointment?",
-          answer:
-            "You can schedule your appointment via WhatsApp or call directly. I'll respond as soon as possible to coordinate your appointment at Hospital La Católica.",
-        },
-      ],
+      // Cardiopulmonary Rehabilitation Section
+      rehabilitationSection: {
+        title: "Cardiopulmonary Rehabilitation",
+        items: [
+          {
+            question: "What is cardiopulmonary rehabilitation?",
+            answer: "It is a supervised medical program that combines aerobic and muscle strengthening exercises to improve cardiovascular and functional capacity. It is designed to help people with heart or lung diseases recover their physical capacity through adapted exercise and professional monitoring.",
+          },
+          {
+            question: "Who can benefit from cardiopulmonary rehabilitation?",
+            answer: "People who have suffered a heart attack, have received coronary angioplasty or catheterization, are recovering from cardiac surgery, have stable heart failure, have certain cardiovascular diseases, have chronic respiratory diseases, or need to recover physical capacity after a cardiovascular event. The indication always depends on a prior medical evaluation.",
+          },
+          {
+            question: "What are the benefits of cardiopulmonary rehabilitation?",
+            answer: "Potential benefits include: improving endurance and physical capacity, strengthening muscles and improving cardiovascular condition, contributing to risk factor control, decreasing fatigue and improving exercise tolerance, promoting emotional wellbeing, and helping reduce the risk of new hospitalizations and cardiovascular complications. Results depend on individual condition and medical follow-up.",
+          },
+          {
+            question: "Is it safe to exercise after a heart attack?",
+            answer: "Yes, when done under proper medical supervision. The cardiopulmonary rehabilitation program is designed precisely so that people who have suffered a cardiovascular event can exercise safely, with continuous monitoring of heart rate, blood pressure, oxygen saturation, and heart rhythm. Safety and timing depend on individual medical evaluation.",
+          },
+          {
+            question: "How long does the rehabilitation program last?",
+            answer: "The program includes 36 rehabilitation sessions, with sessions of approximately 30 to 60 minutes and a frequency of 2 to 3 times per week. Total duration depends on individual progress and each patient's needs.",
+          },
+          {
+            question: "What type of exercises are performed in rehabilitation?",
+            answer: "The program combines aerobic exercise (such as walking, stationary cycling) and muscle strengthening exercise, all personalized according to initial assessment. Exercises are adapted to each patient's capacity and progress.",
+          },
+          {
+            question: "Do I need a medical evaluation before starting?",
+            answer: "Yes, an initial medical evaluation is necessary to assess your current condition, establish an appropriate starting point, and design a personalized exercise program according to your needs and capabilities.",
+          },
+          {
+            question: "Can I participate if I have heart failure?",
+            answer: "Yes, cardiopulmonary rehabilitation is indicated for people with stable heart failure. Participation depends on a medical evaluation that determines if it is the right time to start the program.",
+          },
+          {
+            question: "Is the heart monitored during sessions?",
+            answer: "Yes, during all sessions continuous monitoring of heart rate, blood pressure, oxygen saturation, and heart rhythm is performed through telemetry. This allows safe exercise and timely detection of any alterations.",
+          },
+          {
+            question: "Do I need to be in good physical condition to participate?",
+            answer: "No. The program is designed precisely for people who need to recover their physical capacity. Exercises are adapted to your current condition and progress gradually according to your evolution.",
+          },
+          {
+            question: "Does rehabilitation help prevent another heart attack?",
+            answer: "Cardiopulmonary rehabilitation contributes to cardiovascular risk factor control and can help reduce the risk of new hospitalizations and cardiovascular complications. It is part of a comprehensive approach that also includes lifestyle changes and medical follow-up.",
+          },
+          {
+            question: "What happens when I finish the rehabilitation program?",
+            answer: "At the end of the program, an evaluation of the progress achieved is performed and continuity recommendations are provided to maintain the benefits obtained. The goal is for you to continue with an active lifestyle safely and independently.",
+          },
+          {
+            question: "Can I participate if I am an older adult?",
+            answer: "Yes, cardiopulmonary rehabilitation can benefit older adults. The program adapts to each person's specific capabilities and needs, regardless of age. Participation depends on individual medical evaluation.",
+          },
+          {
+            question: "When can I start after cardiac surgery or heart attack?",
+            answer: "The start time depends on individual medical evaluation. Generally, rehabilitation can begin once the patient is stable and has been authorized by their treating physician. Each case is different and requires personalized evaluation.",
+          },
+          {
+            question: "Why choose a supervised rehabilitation program?",
+            answer: "A supervised program offers continuous professional monitoring, exercises adapted to your specific condition, tracking of your progress, and the security of having medical care available during sessions. This is especially important for people with cardiovascular or pulmonary conditions.",
+          },
+        ],
+        cta: "Inquire about rehabilitation",
+      },
+      // General Medicine and Cardiometabolic Prevention Section
+      cardiometabolicSection: {
+        title: "General Medicine and Cardiometabolic Prevention",
+        items: [
+          {
+            question: "What is a consultation with cardiometabolic prevention focus?",
+            answer: "It is a general medicine consultation focused on prevention, early detection, and control of risk factors related to hypertension, diabetes, obesity, and cholesterol and triglyceride alterations. The goal is to identify risk factors before symptoms or complications appear.",
+          },
+          {
+            question: "What does the general medicine consultation include?",
+            answer: "The consultation includes medical history and physical examination, blood pressure and vital signs measurement, 12-lead electrocardiogram, weight measurement and body composition analysis, cardiovascular and metabolic risk factor assessment, review of laboratory results when applicable, individualized recommendations, and follow-up plan according to patient needs.",
+          },
+          {
+            question: "What is body composition analysis?",
+            answer: "It is a measurement that allows knowing the proportion of muscle mass, body fat, and other body components. This information is useful for evaluating nutritional and metabolic status, and for establishing more precise health goals than just the scale weight.",
+          },
+          {
+            question: "Why is an electrocardiogram performed during the consultation?",
+            answer: "The 12-lead electrocardiogram allows evaluating the heart's electrical activity and detecting possible heart rhythm alterations or other findings that may require attention. It is a non-invasive study that provides valuable information about cardiovascular health.",
+          },
+          {
+            question: "Who should evaluate their cardiometabolic risk?",
+            answer: "People who have elevated blood pressure, have prediabetes or diabetes, are overweight or obese, have elevated cholesterol or triglycerides, lead a sedentary lifestyle, have family history of cardiovascular disease, smoke or have other risk factors, or simply want to prevent diseases even without symptoms.",
+          },
+          {
+            question: "Do I need to have an illness to consult?",
+            answer: "No. You don't need to feel sick to start taking care of your health. The cardiometabolic prevention consultation is designed both for people with known risk factors and for those who want to evaluate their health status preventively.",
+          },
+          {
+            question: "Is follow-up provided for hypertension, diabetes, or high cholesterol?",
+            answer: "Yes. The consultation includes a follow-up plan according to each patient's needs. Accompaniment is offered for controlling high blood pressure, diabetes, cholesterol and triglyceride alterations, and other metabolic risk factors.",
+          },
+          {
+            question: "Does the consultation include nutrition and weight control recommendations?",
+            answer: "Yes. Individualized recommendations on healthy lifestyles are provided, which may include guidance on nutrition, physical activity, and weight control. Depending on each case, coordination with other health professionals may be arranged.",
+          },
+          {
+            question: "Where is the office located?",
+            answer: "The office is located at Hospital Internacional La Católica, Torre Médica, fifth floor, office 501, Guadalupe, San José, Costa Rica. Home consultations and video consultations are also offered for those who require them.",
+          },
+          {
+            question: "Who performs the medical consultation?",
+            answer: "The consultation is performed by Dr. Eimy Stephany Pinto Arita, Physician and Surgeon with a Diploma in Cardiometabolic Risk Prevention from Universidad de Santander (UDES) and the Latin American Academy of Lipidology and Cardiovascular Risk (ALALIP) of Colombia.",
+          },
+        ],
+        cta: "Schedule medical assessment",
+      },
       cta: "Message me on WhatsApp",
     },
 

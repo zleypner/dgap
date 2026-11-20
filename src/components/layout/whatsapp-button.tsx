@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { siteConfig } from "@/config/site";
 import { Icons } from "@/components/ui";
-import { cn } from "@/lib/utils";
+import { cn, getWhatsAppLink } from "@/lib/utils";
 
 export function WhatsAppButton() {
   const { t } = useTranslation();
@@ -74,7 +73,7 @@ export function WhatsAppButton() {
 
       {/* Boton - FAB with consistent design system transitions */}
       <a
-        href={siteConfig.contact.whatsappLink}
+        href={getWhatsAppLink("general")}
         target="_blank"
         rel="noopener noreferrer"
         className="group flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#20BD5A] hover:shadow-[0_12px_30px_rgba(37,211,102,0.25)] active:translate-y-0 active:scale-[0.98] active:bg-[#1DA851]"

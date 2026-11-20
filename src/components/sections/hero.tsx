@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { siteConfig } from "@/config/site";
 import {
   Button,
   Icons,
   AnimateOnScroll,
   Container,
 } from "@/components/ui";
+import { getWhatsAppLink } from "@/lib/utils";
 import { Building2, BadgeCheck, UserRound } from "lucide-react";
 
 export function Hero() {
@@ -81,7 +81,7 @@ export function Hero() {
             >
               <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">
                 <a
-                  href={siteConfig.contact.whatsappLink}
+                  href={getWhatsAppLink("general")}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

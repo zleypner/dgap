@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { siteConfig } from "@/config/site";
 import { useScrollHeader } from "@/hooks";
 import { Button, Icons, LanguageSwitcher } from "@/components/ui";
-import { cn } from "@/lib/utils";
+import { cn, getWhatsAppLink } from "@/lib/utils";
 
 export function Header() {
   const { t } = useTranslation();
@@ -88,7 +87,7 @@ export function Header() {
             <div className="hidden items-center gap-4 lg:flex">
               <LanguageSwitcher />
               <a
-                href={siteConfig.contact.whatsappLink}
+                href={getWhatsAppLink("general")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -102,7 +101,7 @@ export function Header() {
             {/* Mobile CTA - Centered */}
             <div className="absolute left-1/2 -translate-x-1/2 lg:hidden">
               <a
-                href={siteConfig.contact.whatsappLink}
+                href={getWhatsAppLink("general")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -166,7 +165,7 @@ export function Header() {
 
             <div className="flex w-full justify-center px-4">
               <a
-                href={siteConfig.contact.whatsappLink}
+                href={getWhatsAppLink("general")}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleNavClick}
