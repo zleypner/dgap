@@ -1,20 +1,20 @@
 /**
- * Configuracion central - Dra. Eimy Stephany Pinto Arita
- * Medicina General | Rehabilitacion Cardiopulmonar | Cardiologia No Invasiva
- * Hospital La Catolica - Costa Rica
+ * Configuración central - Dra. Eimy Stephany Pinto Arita
+ * Medicina General | Rehabilitación Cardiopulmonar | Cardiología No Invasiva
+ * Hospital La Católica - Costa Rica
  */
 
 export const siteConfig = {
-  // Informacion basica
+  // Información básica
   name: "Dra. Eimy Stephany Pinto Arita",
   shortName: "Dra. Eimy Pinto",
   doctorName: "Dra. Eimy Stephany Pinto Arita",
   doctorFirstName: "Eimy",
-  doctorCode: "MED10809", // Codigo profesional del Colegio de Medicos
+  doctorCode: "MED10809", // Código profesional del Colegio de Médicos
 
-  // Descripcion
+  // Descripción
   description:
-    "Atencion medica enfocada en prevencion cardiometabolica, rehabilitacion cardiopulmonar y estudios de cardiologia no invasiva. Acompanamiento cercano y personalizado en Hospital La Catolica, Costa Rica.",
+    "Atención médica enfocada en prevención cardiometabólica, rehabilitación cardiopulmonar y estudios de cardiología no invasiva. Acompañamiento cercano y personalizado en Hospital La Católica, Costa Rica.",
 
   // Contacto
   contact: {
@@ -28,15 +28,15 @@ export const siteConfig = {
     hours: "Lunes a Viernes",
   },
 
-  // Ubicacion
+  // Ubicación
   location: {
-    hospital: "Hospital Internacional La Catolica",
-    hospitalAddress: "Calle Blancos, Goicoechea, San Jose, Costa Rica",
-    consultorio: "Torre Medica, Piso 5, Consultorios 501/502",
+    hospital: "Hospital Internacional La Católica",
+    hospitalAddress: "Calle Blancos, Goicoechea, San José, Costa Rica",
+    consultorio: "Torre Médica, Piso 5, Consultorios 501/502",
     consultorioAddress: "San Antonio de Guadalupe, Goicoechea, frente a los Tribunales de Justicia",
-    city: "San Jose",
+    city: "San José",
     country: "Costa Rica",
-    mapsUrl: "https://maps.google.com/?q=Torre+Medica+San+Antonio+Guadalupe+Goicoechea+Costa+Rica",
+    mapsUrl: "https://maps.google.com/?q=Torre+Médica+San+Antonio+Guadalupe+Goicoechea+Costa+Rica",
     wazeUrl: "https://waze.com/ul?ll=9.9406,-84.0536&navigate=yes",
     mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1965.2!2d-84.0550!3d9.9406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e36e44f5d5f5%3A0x2c8c8c8c8c8c8c8c!2sTribunales%20de%20Justicia%20Goicoechea!5e0!3m2!1ses!2scr!4v1700000000000",
   },
@@ -58,58 +58,58 @@ export const siteConfig = {
 
   // Credenciales
   credentials: {
-    degree: "Doctor en Medicina y Cirugia",
-    university: "Universidad de Iberoamerica (UNIBE)",
+    degree: "Doctor en Medicina y Cirugía",
+    university: "Universidad de Iberoamérica (UNIBE)",
     graduationPeriod: "Enero 2004 - diciembre 2010",
-    specialty: "Estudios de cardiologia no invasiva",
-    diplomado: "Diplomado en prevencion de riesgo cardiometabolico",
+    specialty: "Estudios de cardiología no invasiva",
+    diplomado: "Diplomado en prevención de riesgo cardiometabólico",
     certifications: [
-      "Instructora de Masaje Infantil - Asociacion Internacional de Masaje Infantil",
-      "Prescriptora autorizada del metodo PNK para perdida de peso",
+      "Instructora de Masaje Infantil - Asociación Internacional de Masaje Infantil",
+      "Prescriptora autorizada del método PNK para pérdida de peso",
     ],
     collegeCode: "MED10809",
     collegeStatus: "Activo",
-    languages: ["Espanol", "English"],
+    languages: ["Español", "English"],
   },
 
   // SEO
   seo: {
     title:
-      "Dra. Eimy Pinto | Rehabilitacion Cardiopulmonar y Salud Cardiometabolica en San Jose, Costa Rica",
+      "Dra. Eimy Pinto | Rehabilitación Cardiopulmonar y Salud Cardiometabólica en San José, Costa Rica",
     description:
-      "Dra. Eimy Pinto en Hospital Internacional La Catolica. Rehabilitacion cardiopulmonar, salud cardiometabolica, Holter, MAPA y electrocardiograma con acompanamiento cercano en San Jose, Costa Rica.",
+      "Dra. Eimy Pinto en Hospital Internacional La Católica. Rehabilitación cardiopulmonar, salud cardiometabólica, Holter, MAPA y electrocardiograma con acompañamiento cercano en San José, Costa Rica.",
     keywords: [
-      "rehabilitacion cardiopulmonar Costa Rica",
-      "rehabilitacion pulmonar Costa Rica",
-      "rehabilitacion cardiaca Costa Rica",
-      "rehabilitacion cardiopulmonar San Jose",
-      "salud cardiometabolica Costa Rica",
-      "riesgo cardiometabolico Costa Rica",
-      "prevencion cardiometabolica",
-      "valoracion cardiometabolica",
+      "rehabilitación cardiopulmonar Costa Rica",
+      "rehabilitación pulmonar Costa Rica",
+      "rehabilitación cardiaca Costa Rica",
+      "rehabilitación cardiopulmonar San José",
+      "salud cardiometabólica Costa Rica",
+      "riesgo cardiometabólico Costa Rica",
+      "prevención cardiometabólica",
+      "valoración cardiometabólica",
       "Holter Costa Rica",
       "Holter 24 horas",
       "MAPA 24 horas Costa Rica",
-      "monitoreo ambulatorio de presion arterial",
+      "monitoreo ambulatorio de presión arterial",
       "electrocardiograma Costa Rica",
-      "electrocardiograma con interpretacion",
-      "cardiologia no invasiva Costa Rica",
-      "analisis de composicion corporal",
+      "electrocardiograma con interpretación",
+      "cardiología no invasiva Costa Rica",
+      "análisis de composición corporal",
       "Dra. Eimy Pinto",
-      "medico Hospital La Catolica",
-      "medico San Jose Costa Rica",
-      "Hospital Internacional La Catolica",
+      "médico Hospital La Católica",
+      "médico San José Costa Rica",
+      "Hospital Internacional La Católica",
       "Goicoechea",
       "Guadalupe",
     ],
   },
 
-  // Navegacion
+  // Navegación
   navigation: [
     { label: "Inicio", href: "#inicio" },
     { label: "Servicios", href: "#servicios" },
-    { label: "Rehabilitacion", href: "#rehabilitacion" },
-    { label: "Sobre mi", href: "#sobre" },
+    { label: "Rehabilitación", href: "#rehabilitacion" },
+    { label: "Sobre mí", href: "#sobre" },
     { label: "FAQ", href: "#faq" },
     { label: "Contacto", href: "#contacto" },
   ],
@@ -118,19 +118,19 @@ export const siteConfig = {
   mainServices: [
     {
       id: "rehabilitacion",
-      name: "Rehabilitacion Cardiopulmonar",
+      name: "Rehabilitación Cardiopulmonar",
       shortDescription:
-        "Acompanamiento en tu recuperacion cardiovascular y pulmonar con un enfoque personalizado.",
+        "Acompañamiento en tu recuperación cardiovascular y pulmonar con un enfoque personalizado.",
     },
     {
       id: "cardiometabolico",
-      name: "Salud Cardiometabolica",
+      name: "Salud Cardiometabólica",
       shortDescription:
-        "Prevencion y control de factores de riesgo cardiovascular y metabolico.",
+        "Prevención y control de factores de riesgo cardiovascular y metabólico.",
     },
     {
       id: "cardiologia",
-      name: "Cardiologia No Invasiva",
+      name: "Cardiología No Invasiva",
       shortDescription:
         "Estudios cardiovasculares precisos: Holter, MAPA, electrocardiograma.",
     },
@@ -141,31 +141,31 @@ export const siteConfig = {
     {
       id: "ecg",
       name: "Electrocardiograma",
-      description: "Electrocardiograma (ECG) con interpretacion",
+      description: "Electrocardiograma (ECG) con interpretación",
       variant: "Electrocardiograma + Consulta disponible",
     },
     {
       id: "holter",
       name: "Holter",
-      description: "Holter 24 horas - hasta 30 dias",
+      description: "Holter 24 horas - hasta 30 días",
       devices: ["Spacelabs", "Novi"],
     },
     {
       id: "oxi-holter",
       name: "Oxi Holter",
-      description: "Oxi Holter 24 horas - Monitoreo de oximetria y ritmo cardiaco",
+      description: "Oxi Holter 24 horas - Monitoreo de oximetría y ritmo cardíaco",
       devices: ["Novi"],
     },
     {
       id: "mapa",
       name: "MAPA",
-      description: "Monitoreo Ambulatorio de Presion Arterial - 24 horas",
+      description: "Monitoreo Ambulatorio de Presión Arterial - 24 horas",
       devices: ["Spacelabs"],
     },
     {
       id: "eco-domicilio",
       name: "Ecocardiograma a domicilio",
-      description: "Estudio ecocardiografico en la comodidad de tu hogar",
+      description: "Estudio ecocardiográfico en la comodidad de tu hogar",
     },
   ],
 
@@ -178,36 +178,36 @@ export const siteConfig = {
       "Consulta de seguimiento",
       "Consulta a domicilio",
       "Videoconsulta",
-      "Prescripcion de ejercicio con enfoque en adulto mayor",
+      "Prescripción de ejercicio con enfoque en adulto mayor",
     ],
-    prevencion: [
-      "Control metabolico",
-      "Analisis de composicion corporal",
-      "Valoracion de fuerza muscular",
-      "Chequeo medico general",
-      "Valoracion medica anual",
-      "Valoracion de laboratorios",
-      "Valoracion de gabinetes",
-      "Promocion de estilos de vida saludable",
+    prevención: [
+      "Control metabólico",
+      "Análisis de composición corporal",
+      "Valoración de fuerza muscular",
+      "Chequeo médico general",
+      "Valoración médica anual",
+      "Valoración de laboratorios",
+      "Valoración de gabinetes",
+      "Promoción de estilos de vida saludable",
     ],
     cardiovasculares: [
-      "Electrocardiograma con interpretacion",
+      "Electrocardiograma con interpretación",
       "Electrocardiograma + consulta",
-      "Holter 24 horas - 30 dias",
+      "Holter 24 horas - 30 días",
       "Oxi Holter 24 horas",
       "MAPA 24 horas",
       "Ecocardiograma a domicilio",
     ],
     procedimientos: [
-      "Dictamen medico",
+      "Dictamen médico",
       "Dictamen para licencia",
       "Papanicolau + consulta",
       "Retiro de puntos",
       "Sutura de heridas menores",
     ],
-    tecnologias: [
+    tecnologías: [
       "Dispositivo Novi",
-      "Prueba de farmacogenomica Migenesys",
+      "Prueba de farmacogenómica Migenesys",
       "Nursing Monitor / monitoreo de signos vitales",
     ],
     otros: [
@@ -216,13 +216,13 @@ export const siteConfig = {
     ],
   },
 
-  // Imagenes
+  // Imágenes
   images: {
     hero: "/images/services/pulmonar2.webp", // Imagen de rehabilitación pulmonar
     about: "/images/doctor/img1.2.png", // Retrato con bata blanca
     consultation: "/images/doctor/img1.1.png", // Consulta con paciente
     office: "/images/doctor/img1.1.png", // En escritorio del consultorio
-    // Imagenes de servicios
+    // Imágenes de servicios
     rehabilitacion: "/images/services/pulmonar2.webp",
     rehabilitacion2: "/images/services/pulmonar2.webp",
     rehabilitacion3: "/images/services/terapiapulmonar.webp",
