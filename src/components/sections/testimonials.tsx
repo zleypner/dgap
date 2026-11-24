@@ -260,9 +260,9 @@ export function Testimonials() {
 
       {/* Carousel rows - full width */}
       <div className="space-y-2 sm:space-y-4">
-        <CarouselRow testimonials={row1} direction="left" duration={12} />
-        <CarouselRow testimonials={row2} direction="right" duration={14} />
-        <CarouselRow testimonials={row3} direction="left" duration={13} />
+        <CarouselRow testimonials={row1} direction="left" duration={10} />
+        <CarouselRow testimonials={row2} direction="right" duration={12} />
+        <CarouselRow testimonials={row3} direction="left" duration={11} />
       </div>
 
       <Container>
