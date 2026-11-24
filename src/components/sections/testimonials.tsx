@@ -174,29 +174,29 @@ const row3 = testimonials.slice(20, 30);
 
 function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
   return (
-    <div className="mx-1.5 w-[280px] flex-shrink-0 sm:mx-2 sm:w-[320px] md:w-[350px]">
-      <div className="flex h-full flex-col rounded-xl border border-[#38BDF8]/20 bg-white p-4 shadow-sm sm:rounded-2xl sm:p-5">
+    <div className="mx-1 w-[220px] flex-shrink-0 sm:mx-2 sm:w-[320px] md:w-[350px]">
+      <div className="flex h-full flex-col rounded-xl border border-[#38BDF8]/20 bg-white p-3 shadow-sm sm:rounded-2xl sm:p-5">
         {/* Quote icon and rating */}
-        <div className="mb-3 flex items-center justify-between">
-          <Quote className="h-6 w-6 text-[#38BDF8]/40" />
+        <div className="mb-2 flex items-center justify-between sm:mb-3">
+          <Quote className="h-5 w-5 text-[#38BDF8]/40 sm:h-6 sm:w-6" />
           <StarRating rating={5} />
         </div>
 
         {/* Text */}
-        <p className="mb-4 flex-grow text-sm leading-relaxed text-[#1E3A5F]/80">
+        <p className="mb-3 flex-grow text-xs leading-relaxed text-[#1E3A5F]/80 sm:mb-4 sm:text-sm">
           &ldquo;{testimonial.text}&rdquo;
         </p>
 
         {/* Author */}
-        <div className="flex items-center gap-3 border-t border-[#E5E7EB] pt-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#38BDF8]/10">
-            <Icons.user className="h-4 w-4 text-[#38BDF8]" />
+        <div className="flex items-center gap-2 border-t border-[#E5E7EB] pt-2 sm:gap-3 sm:pt-3">
+          <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#38BDF8]/10 sm:h-9 sm:w-9">
+            <Icons.user className="h-3 w-3 text-[#38BDF8] sm:h-4 sm:w-4" />
           </div>
           <div className="min-w-0 flex-1">
-            <p className="truncate text-sm font-semibold text-[#1E3A5F]">
+            <p className="truncate text-xs font-semibold text-[#1E3A5F] sm:text-sm">
               {testimonial.name}
             </p>
-            <p className="text-xs text-[#1E3A5F]/50">
+            <p className="text-[10px] text-[#1E3A5F]/50 sm:text-xs">
               {testimonial.date}
             </p>
           </div>
@@ -259,10 +259,10 @@ export function Testimonials() {
       </Container>
 
       {/* Carousel rows - full width */}
-      <div className="space-y-3 sm:space-y-4">
-        <CarouselRow testimonials={row1} direction="left" duration={20} />
-        <CarouselRow testimonials={row2} direction="right" duration={24} />
-        <CarouselRow testimonials={row3} direction="left" duration={22} />
+      <div className="space-y-2 sm:space-y-4">
+        <CarouselRow testimonials={row1} direction="left" duration={12} />
+        <CarouselRow testimonials={row2} direction="right" duration={14} />
+        <CarouselRow testimonials={row3} direction="left" duration={13} />
       </div>
 
       <Container>
